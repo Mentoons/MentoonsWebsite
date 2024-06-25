@@ -76,7 +76,7 @@ nav .nav-links li:hover{
     display: none;
     font-family: 'Poppins', sans-serif;
 }
-@media screen and (min-width:1600px) {
+@media screen and (max-width:600px) {
     nav .logo{
         background-color: #00AEEF;
         width: 120px;

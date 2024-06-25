@@ -23,7 +23,7 @@ const Home = () => {
     
    <Navbar />
    <Carousel />
-   <Header />
+   {/* <Header />
    <Join />
    <Workshop />
    <Team />
@@ -34,7 +34,7 @@ const Home = () => {
      <Gallery />
    <Crochild />
    <Contact />
-   <Footer /> 
+   <Footer />  */}
 
     </div>
   )

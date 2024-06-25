@@ -60,6 +60,9 @@
     z-index: -1 ;
 
 }
+.txt-box{
+    padding: 0 2em;
+}
 .cloud:after{
     border-radius: 100px;
     height: 100px;
@@ -99,11 +102,10 @@
     width: 200px;
     margin-left: 70%;
 }
-.teamvideo{
-    margin-left: 130px;
-    width: 60%;
-    margin-top: 40px;
+.teamvideo {
     border-radius: 20px;
+    margin: 20px auto;
+    width: 60%;
 }
 .sir-image img {
     z-index: 1;

@@ -1,7 +1,8 @@
 import axios  from "axios"
 
 const api = axios.create({
-    baseURL : "https://mentoons-master-backend.onrender.com"
+    // baseURL : "https://mentoons-master-backend.onrender.com",
+    baseURL : "https://master-mentoons-backend.onrender.com",
     // baseURL : "https://localhost:3001"
 
     

@@ -75,7 +75,7 @@
 .bee{
     width: 50px;
 }
-@media screen and (max-width:600px) {
+@media only screen and (max-width: 767px) {
     .caro-container{
         margin-top: 80px;
     }
@@ -106,5 +106,14 @@
         font-size: 14px;
         margin: 20px;
         text-align: center;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .caro-container img{
+        margin-top: 4%;
+        width: 110%;
+        height: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
     }
 }

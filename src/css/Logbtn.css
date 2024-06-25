@@ -97,15 +97,11 @@ nav .nav-linkss li:hover{
         color:white;
         font-weight: 500;
         font-size: 30px;
-       
-        
+        margin: 35px;
     }
     .logo-for-mob{
-        position: absolute;
         display: inline;
         width: 200px;
-        margin-top: -34px;
-        margin-left: 37%;
         
     }
     nav .nav-links{
