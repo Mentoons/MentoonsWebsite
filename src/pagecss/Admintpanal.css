@@ -1,0 +1,19 @@
+.addmin-sidebar{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar-nav{
+    background-color: #00AEEF;
+    height: 120vh;
+    width: 200px;
+}
+
+.dase-box h1{
+position: absolute;
+margin-left: 30%;
+color: red;
+    font-size: 90px;
+}
+.ap-icons{
+    font-size: 20px;
+}

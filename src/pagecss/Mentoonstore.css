@@ -1,0 +1,123 @@
+.btns {
+    position: absolute;
+    display: flex;
+    gap: 5rem;
+    margin-top: 8%;
+    margin-left: 35%;
+  }
+  
+  .categorys-box {
+    display: flex;
+    gap: 5rem;
+    align-items: center; /* Align items vertically in the middle */
+  }
+  
+  .categorys-box button {
+    border: 1px solid #FFDA00;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  
+    .loading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18%;
+        margin-left: 45%;
+        font-size: 20px;
+        position: absolute;
+    }
+    .categorys-box button:hover{
+        border: 1px solid white;
+        background-color: #FFDA00;
+        color: white;
+        padding: 10px;
+        border-radius: 10%;
+    }
+    .product-main{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        cursor: pointer;
+    
+    }
+    .product-box {
+        background-color:white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        height: 260px;
+        padding: 40px;
+        border-radius: 10%;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        box-shadow: 17px 18px 12px 0px rgba(0,0,0,0.1);
+    }
+    .product-box img{
+        width: 120px;
+        display: flex;
+       /* margin-left: 10%; */
+       margin-top: 1%;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+    .product-box h2{
+       
+        font-size: 14px;
+        margin-top: 75%;
+    }
+    .product-box p{
+        flex-wrap: wrap;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .addtocart-btn{
+        margin-top: 20px;
+        background-color: #45CAFB;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10%;
+        cursor: pointer;
+    }
+    .addtocart-btn:hover{
+        background-color:#fff ;
+        border: 1px solid #45CAFB;
+        font-size: 16px;
+        border-radius: 10%;
+        transform: 0.1s ;
+    }
+    .show-product{
+        position: absolute;
+        display: flex;
+        margin-top: 180px;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center ;
+    }
+   .showcase-items{
+    margin-top: -90%;
+    margin-left: 150px;
+   
+   
+   }
+   .showcase-items p,h1,h2{
+    padding: 1px;
+   }
+   .showcase-items span{
+    color: green;
+    padding-left: 10px;
+   }
+   .ten-rs-offer p{
+    text-align: center;
+    display: flex;
+    text-decoration: line-through;
+   }

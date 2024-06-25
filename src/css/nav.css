@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+nav img{
+
+    width: 150px;
+    margin-bottom: -50px;
+    object-fit:contain;
+    transform: translateX(10);
+    margin: 20px;
+}
+nav .logo{
+    background-color: #00AEEF;
+    margin-top: 40px;
+    width: 170px;
+    height: 120px;
+    border-radius: 0px 0px 30px 30px ;
+    border-bottom: 1px solid  #FF7300;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #00AEEF;
+    height: 80px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    border-bottom: 1px solid  #FF7300;
+    font-family: 'Poppins', sans-serif;
+    
+}
+nav .nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav .nav-links li{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color:  #fff;
+    font-family: 'Poppins', sans-serif;
+    right: 180px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .nav-links li:hover{
+    background-color :#FF7300;
+    color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+   
+}
+/* nav .nav-links li:active{
+    background-color: #D12881;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+} */
+.logo-for-mob{
+        display: none;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FF7300;
+    font-weight: 500;
+    font-size: 30px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (min-width:1600px) {
+    nav .logo{
+        background-color: #00AEEF;
+        width: 120px;
+        height: 100px;
+        border-radius: 0px 0px 30px 30px ;
+        
+    }
+    .icons{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color:#FF7300;
+        font-weight: 500;
+        font-size: 30px;
+      margin-left: 2%;
+        
+    }
+    .logo-for-mob{
+        position: absolute;
+        display: inline;
+        width: 200px;
+        margin-top: -34px;
+        margin-left: 50%;
+    }
+    nav .nav-links{
+        position: absolute;
+        width: 100%;
+        top:80px;
+       
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        background-color:#00AEEF;
+    }
+    nav .nav-links.active{
+        position: absolute;
+        width: 100%;
+        top:80px;
+        left: -100%;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        background-color: aqua;
+        transition: 4s ease-in;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        background-color: #00AEEF;
+        height: 80px;
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        border-bottom: 1px solid  #FF7300;
+       
+    }
+    .logo{
+        display: none; 
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    nav .nav-links li{
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color:  #fff;
+        font-family: 'Poppins', sans-serif;
+        right: 180px;
+        margin-right: 1px;
+        cursor: pointer;
+    }   
+    
+}

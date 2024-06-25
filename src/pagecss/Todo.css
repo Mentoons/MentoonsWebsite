@@ -1,0 +1,19 @@
+.todo-main-box{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24%;
+    background-color: yellow;
+    padding: 10px;
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+.todo-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    gap: 2rem;
+}

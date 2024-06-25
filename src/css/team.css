@@ -1,0 +1,162 @@
+
+.owl{
+    position: absolute;
+    float: right;
+    width: 300px;
+    z-index: 1;
+    margin-bottom: 70%;
+}
+.team  {
+    position: relative;
+    height: 80vh;
+    background-color: #FDFBE8;
+}
+.ateamvideo-team{
+    margin-top: 70px;
+    width: 600px;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+.video {
+    width: 150px;
+}
+.team img{
+    position: absolute;
+    margin-top: -20%;
+    width: 100%;
+    z-index: 1;
+}
+.teambord img{
+    width: 400px;
+    z-index: 1;
+    margin-top: 39%;
+   
+   
+}
+.teambord{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.videobox{
+   display: flex;
+   align-items: center;
+}
+.videobox h1{
+    top: 50px;
+}
+.teamtxt h1{
+   text-align: center;
+   padding: 30px;
+   top: 190px;
+   right: 400px;
+   font-size: 50px;
+   color: transparent;
+   position: absolute;
+   font-family: 'Archivo Black', sans-serif;
+   
+}
+.teamtxt p{
+    position: absolute;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Caveat', cursive;
+    margin-top: 10px;
+    color: black;
+    flex-wrap: wrap;
+   
+}
+.teamtxt{
+    padding: 20px;
+}
+.branch{
+    width: 20px;
+    top:120px;
+    border-radius: 10px;
+}
+@media screen and (max-width:600px) {
+    
+   
+    .video {
+        width: 900px;
+    }
+    .ateamvideo-team {
+        width: 300px;
+        margin-left: 30px;
+        border-radius: 30px;
+        margin-top: -550%;
+    }
+    .team  {
+        position: absolute;
+        height: 90vh;
+        margin-top: 190%;
+        width: 100%;
+    
+    }
+    .ateamvideo-team{
+        width: 700px;
+        margin-top: 30%;
+        margin-left: 10px;
+        border-radius: 30px;
+    }
+    .videobox{
+        display: block;
+        margin-top: 100%;
+        align-items: center;
+        /* justify-content: space-around; */
+     }
+     .teamtxt p{
+        position: absolute;
+        top: 35%;
+        text-align: center;
+        /* font-size: 25px; */
+        font-family: 'Caveat', cursive;
+        margin-top: -20px;
+      
+       color: black;
+       
+    }
+    .teamtxt h1{
+        text-align: center;
+        padding: 30px;
+        top: 30px;
+        right: 80px;     
+        position: absolute;
+     }
+     .teambord p{
+        position: absolute;
+        font-size: 10px;
+        top:100px;
+        z-index: 1;
+        text-align: center;  
+    }
+    .ateamvideo-team{
+        position: absolute;
+        width: 400px;
+        margin-top: -15%;
+        margin-left: 50px;
+        border-radius: 30px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .ateamvideo-team{
+        position: absolute;
+        width: 400px;
+        margin-top: 65%;
+        margin-left: 50px;
+        border-radius: 30px;
+    }
+    .teamtxt p{
+        position: absolute;
+        top: 35%;
+        margin-left: 60%;
+        width: 30%;
+        text-align: center;
+        /* font-size: 25px; */
+        font-family: 'Caveat', cursive;
+        margin-top: -20px;
+       color: black;
+       
+    }
+}

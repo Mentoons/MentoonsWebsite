@@ -1,0 +1,25 @@
+.addcate input{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid yellow;
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+.addcate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-add-cate{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 8%;
+}
+.addcate button{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: yellow;padding: 10px;
+}

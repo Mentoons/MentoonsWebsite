@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+.workshop-nav{
+    background-color: #FFDA00;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+
+}
+.container-work {
+    position: relative;
+    background: linear-gradient(135deg, rgb(179, 208, 253) 0%, rgb(164, 202, 248) 100%);
+    border-radius: 1000px;
+    padding: 4px;
+    display: grid;
+    place-content: center;
+    z-index: 0;
+    max-width: 300px;
+    margin: 0 10px;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container::after, .search-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+  }
+  
+  .search-container::before {
+    top: -1px;
+    left: -1px;
+    background: linear-gradient(0deg, rgb(218, 232, 247) 0%, rgb(255, 255, 255) 100%);
+    z-index: -1;
+  }
+  
+  .search-container::after {
+    bottom: -1px;
+    right: -1px;
+    background: linear-gradient(0deg, rgb(163, 206, 255) 0%, rgb(211, 232, 255) 100%);
+    z-index: -2;
+  }
+  
+  .input {
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    border: none;
+    color: #9EBCD9;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+  
+  .input:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
+  }
+  
+  .search__icon {
+    width: 50px;
+    aspect-ratio: 1;
+    border-left: 2px solid white;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 50%;
+    padding-left: 12px;
+    margin-right: 10px;
+  }
+  
+  .search__icon:hover {
+    border-left: 3px solid white;
+  }
+  
+  .search__icon path {
+    fill: white;
+  }
+  .logo-for-workshop{
+    width: 150px;
+  }
+  .own-p{
+    margin-top: 2%;
+    margin-left: 20%;
+    font-size: 32px;
+    color:  #D12881;
+    font-family: 'Salsa', cursive;
+  }
+  .Work-Hdr-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .faq {
+    margin-top: 90px;
+  }
+  .faq p{
+    position: absolute;
+  background-color: #D12881 ;
+  width: 100%;
+  height: 10%;
+  padding-top: 20px;
+  color: white ;
+  padding-left: 40PX;
+  font-size: 20px;
+  font-family: 'Salsa', cursive;
+  }
+  .wrk-hdr H1{
+
+    font-size: 50px;
+        color: #EC9600;
+        font-family: 'Salsa', cursive;
+        margin-top: 15%;
+  }
+  .wrk-hdr h2{
+    margin-left: 20%;
+    font-size: 50px;
+    color: #EC9600;
+    font-family: 'Salsa', cursive;
+  }
+  .work-shop-boxes{
+    position: inherit;
+    margin-top:15%;
+  }
+  .first-box{
+    background-color: #9EBCD9;
+    height: 200px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  .first-box p{
+    margin-top: 10%;
+    font-size: 22px;
+    color: white;
+
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .second-box{
+    background-color: yellowgreen;
+    height: 200px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  .second-box p{
+    margin-top: 10%;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .mood{
+    padding: 20px;
+    font-size: 50px;
+    color: #EC9600;
+    font-family: 'Salsa', cursive;
+  }

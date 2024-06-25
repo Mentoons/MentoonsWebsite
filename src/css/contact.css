@@ -1,0 +1,99 @@
+.contact-main{
+    background-color: #FDFBE8;
+    height: 110vh;
+    width: 100%;
+    
+
+}
+.contact-btn{
+    position: absolute;
+    background-color: #d12881;
+    margin-top: -60px;
+    margin-left: 55%;
+    padding: 10px;
+    color: white;
+    border-radius: 355px 45px 225px 75px/15px 225px 15px 255px ;
+}
+.contact-main-conatiner{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.contact-box input{
+    margin-left: -159%;
+    width: 270%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+    border: 2px solid gainsboro ;
+
+}
+.contact-box h1{
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -320px;
+     color: black;
+     font-size: 50px;
+}
+.contact-box input:nth-child(7){
+    
+    padding: 40px;
+}
+.information p{
+    font-size: 22px;
+    color: black;
+    margin: 10px;
+}
+.information h1{
+    color:black;
+    font-size: 50px;
+}
+.write-us{
+    margin-top: 260px;
+}
+.write-us h1{
+    position: absolute;
+   margin-top: 90px;
+    color: blanchedalmond;
+    font-size: 50px;
+}
+
+@media screen and (max-width:600px){
+    .contact-main{
+        background-color: #FDFBE8;
+        height: 175vh;
+        width: 100%;
+        margin-top: 20px
+    }
+    .information {
+        position: absolute;
+        top: 650px;
+    
+    }
+    .contact-box{
+        position: absolute;
+        top: 300px;
+        left: 69%;
+    }
+    .contact-btn{
+        background-color: #00AEEF;
+        margin-top: 560px;
+        margin-left: 25%;
+        padding: 10px;
+        color: white;
+        border-radius: 355px 45px 225px 75px/15px 225px 15px 255px ;
+    }
+    .contact-box input{
+        margin-left: -159%;
+        width: 170%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+        border: 2px solid gainsboro ;
+    
+    }
+}

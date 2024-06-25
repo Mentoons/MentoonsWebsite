@@ -1,0 +1,16 @@
+.error{
+    width: 900px;
+    margin-left: 18%;
+}
+.error-main h1{
+   position: absolute;
+   margin-top: 12%;
+   margin-left: 20%;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #373D60;
+    font-weight: 900;
+}

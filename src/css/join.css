@@ -1,0 +1,193 @@
+.joincointainer{
+   
+    height: 100vh;
+    width: 100%;
+
+}
+.about-txt{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.about-txt h3{
+    text-align: center;
+    font-size:70px;
+    color: black;
+    margin-top: 20px;
+    padding: 20px;
+}
+.about-txt p{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: black;
+    
+}
+.per-icons{
+    position: absolute;
+    font-size: 40px;
+    margin-top: -18px;
+    margin-left: 47%;
+    color: #EC9600;
+}
+.per-iconsa{
+    position: absolute;
+    font-size: 40px;
+    margin-top: -18px;
+    margin-left: 49%;
+    color: #EC9600;
+}
+.join-heading h1{
+    background-color: #34327C;
+    margin-left: 30%;
+    text-align: center;
+    font-size:45px;
+    color: white;
+    font-weight: 1000;
+    margin-top: 20px;
+    width: 40%;
+    text-align: center;
+    border-radius:100%;
+    padding: 30px;
+   
+}
+
+.grass{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.grass p{
+    position: absolute;
+    font-size: 40px;
+    color:#FEEEAB;
+    top:80px;
+   
+    
+}
+.bird{
+    
+    width: 400px;
+    
+}
+
+.birdiv{
+    position: absolute;
+    top: 820px;
+}
+
+@media screen and (max-width:600px){
+    .birdiv{
+        position: absolute;
+        top: 520px;
+        width: 150%;
+    }
+    .joincointainer{
+    }
+    .join-txt h3{
+        font-size: 40px;
+    }
+    .join-txt p{
+        color: #34327C;
+        font-size: 16px;
+    }
+    .join-heading h1{
+        background-color: #34327C;
+        margin-left: 17%;
+        text-align: center;
+        font-size:25px;
+        color: white;
+        font-weight: 1000;
+        margin-top:30px;
+        width: 70%;
+        text-align: center;
+        border-radius:100%;
+        padding: 10px;
+        position: absolute;
+       
+    }
+    .per-icons{
+        position: absolute;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: 45%;
+        color: #EC9600;
+        z-index: 1;
+    }
+    .per-iconsa{
+        position: absolute;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: 49%;
+        color: #EC9600;
+        z-index: 1;
+    }
+    .about-txt h1{
+        text-align: center;
+        font-size:50px;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        margin-top: 20px;
+    }
+    .about-txt p{
+        text-align: center;
+        line-height: 2rem;
+        font-family: 'Caveat', cursive;
+       
+    }
+    .about-txt{
+        display: block;
+        /* justify-content: space-around; */
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    
+}
+@media (min-width:768px) and (max-width:1024px){
+    .join-heading h1{
+        background-color: #34327C;
+        margin-left:30%;
+        text-align: center;
+        font-size:25px;
+        color: white;
+        font-weight: 1000;
+        margin-top:30px;
+        width: 40%;
+        text-align: center;
+        border-radius:100%;
+        padding: 10px;
+        position: absolute;
+       
+    }
+    .per-icons{
+        position: absolute;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: 45%;
+        color: #EC9600;
+        z-index: 1;
+    }
+    .per-iconsa{
+        position: absolute;
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: 47%;
+        color: #EC9600;
+        z-index: 1;
+    }
+    .about-txt h3{
+        text-align: center;
+        font-size:40px;
+        color: black;
+        margin-top: 90px;
+        padding: 20px;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    .joincointainer {
+        height: 75vh;
+        width: 100%;
+    }
+}

@@ -1,0 +1,139 @@
+.workshop{
+    background-image: url('../Images/bgdots.png');
+    height: 100vh;
+    width: 100%;
+}
+.workshop-box{
+    background-color: #FDFBE8;
+    margin-top: 70px;
+    margin-left: 10%;
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+
+.main-Workshop-conatiner{
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+    margin-top: 3%;
+}
+.Workshop-image{
+    background-image: url('../Images/kidsbg.png');
+   margin-left: 5%;
+    border: 5px solid #34327C;
+    border-radius: 50%;
+    margin-top: 5%;
+    box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+
+}
+.Workshop-image img{
+    background-image: url('../Images/kidsbg.png');
+    border-radius: 50%;
+    width: 400px;
+
+}
+.container-workshpo h1{
+font-size: 50px;
+font-family: 'Archivo Black', sans-serif;
+}
+.workshop-side-btns button{
+    background-color: #34327C;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 10px 10px 0px 0px ;
+}
+.workshop-side-btns button:hover{
+    background-color:  #D12881 ;
+}
+.workshop-side-btns{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 35%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  
+}
+/* empoer css */
+
+@media screen and (max-width:600px) {
+    .container-workshpo h1 {
+        font-size: 40px;
+    }
+    .workshop{
+        position: absolute;
+        margin-top: 55%;
+        height: 100vh;
+    }
+    .main-Workshop-conatiner{
+        margin-top: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+       
+    }
+    .workshop-box{
+        background-color: #FDFBE8;
+        margin-top: 70px;
+        margin-left: 50%;
+        width: 0px;
+        height: 70%;
+        border-radius: 20px;
+        
+    }
+    
+    .workshop-side-btns button{
+       
+        background-color: #34327C;
+        padding: 20px;
+        color: aliceblue;
+        border-radius: 10px 10px 0px 0px ;
+        margin-top:89px;
+        margin-left: -105px;
+        margin-right: 90px;
+        display: block  ;
+        
+    }
+    .workshop-side-btns button:hover{
+        background-color:  #D12881 ;
+    }
+    .Workshop-image img{
+        margin-top: 100px;
+        margin-left: -120px;
+        border-radius: 80%;
+        width: 200px;
+        position: absolute;
+        display: none;
+    }
+    .full-box-work{
+        background-color: #FDFBE8;
+        height: 100px;
+    }
+    /* .Workshop-image img{
+        background-image: url('../Images/kidsbg.png');
+        border-radius: 5%;
+        width: 400px;
+    
+    } */
+}
+@media (min-width:768px) and (max-width:1024px){
+    .workshop-side-btns {
+        position: absolute;
+        margin-top: -60px;
+        margin-left: 25%;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .Workshop-image img{
+        display: none;
+    }
+  
+}
+
+
+
+
+ 

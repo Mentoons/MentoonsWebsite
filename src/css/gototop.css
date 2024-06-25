@@ -1,0 +1,18 @@
+/* .main-butup{
+    position: fixed;
+    z-index: 3;
+} */
+
+.up-btn button{
+
+    background-color:whitesmoke;
+    padding: 10px;
+    z-index: 3;
+    margin-left: 90%;
+    padding: 10px;
+    position: fixed;
+   
+}
+.up-btn-icon{
+    color: green;
+}

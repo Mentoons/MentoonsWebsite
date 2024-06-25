@@ -1,0 +1,282 @@
+.signin-main-container-new{
+  background-color: #F79F07;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fb-icon{
+  position: absolute;
+  color: #316FF6;
+  font-size: 40px;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.passc-icons{
+  position: absolute;
+    color: black;
+    margin-left:  34%;
+    margin-top: -94px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.signin-btn{
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 5%;
+  background-color: white;
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+}
+.gog-icon{
+  position: absolute;
+  margin-top: 2%;
+  font-size: 40px;
+  z-index: 1;
+  margin-top: 3%;
+  margin-left: 5%;
+
+}
+.right-side-box-new{
+  background-image: url('../Images/background.png');
+  width: 50%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.logo-signin{
+  width: 398px;
+}
+.forget-login{
+  color: white;
+ margin-left: 30%;
+ }
+.passc-icons{
+  position: absolute;
+    color: black;
+    margin-left:  37%;
+    margin-top: -57px;
+    font-size: 30px;
+    z-index: 1;
+}
+.signin-input-new input{
+  margin-top: 20px;
+   width: 290%;
+   margin-left: 10%;
+   border-radius: 10px;
+   padding: 10px;
+   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+
+ }
+.signup-input span{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30%;
+}
+.signup-input-new span {
+  position: absolute;
+  margin-top: -30%;
+  margin-left: 75%;
+}
+.group-image-signin{
+  width: 70%;
+    margin-top:-12%;
+    margin-left: 19%;
+}
+.left-side-box h1{
+  position: absolute;
+  margin-top: -150px;
+text-align: center;
+font-size: 25px;
+padding: 10px;
+margin-left: 2%;
+}
+.left-side-box p{
+  position: absolute;
+  margin-top: -120px;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  margin-left: 2%;
+}
+.signup-input input{
+  width: 300%;
+  margin-left: 40%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+}
+.signup-input span{
+  position: absolute;
+  margin-left: 35%;
+}
+.signup-btn{
+  position: absolute;
+  margin-left: 5%;
+  background-color: white;
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+  cursor: pointer;
+}
+
+.facebook-login{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 90%;
+  margin-left: 40%;
+ 
+}
+
+.gog-box h3{
+  z-index: 1;
+  margin-top: 15px;
+  margin-left: 30%;
+}
+.fb-box{
+  position: absolute;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  height: 60px;
+  margin-left: 20%;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+  
+}
+.fb-box h3{
+  margin-top: 15px;
+  margin-left: 25%;
+}
+.gog-box{
+  position: absolute;
+  background-color: white;
+  width: 20%;
+  height: 60px;
+ margin-left: -1%;
+ margin-right: 20px;
+ border-radius: 10px;
+ box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+}
+.left-side-box h2{
+  position: absolute;
+
+  margin-left: 18%;
+}
+@media screen and (max-width:600px) {
+  .group-image-signin{
+    position: absolute;
+    width: 90%;
+    margin-top:-9%;
+    margin-left: 3%;
+  }
+  .signin-input-new {
+    position: absolute;
+    margin-top: 150px;
+  }
+  .logo-signin{
+    width: 398px;
+  }
+  .signin-input-new input{
+   margin-top: 20px;
+    width: 190%;
+    margin-left: 10%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+
+  }
+  .signin-main-container-new{
+    background-color: #F79F07;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .forget-login{
+   color: white;
+  margin-left: 30%;
+  }
+.left-side-box{
+  position: absolute;
+  margin-top: 139%;
+  background-color: #F79F07;
+  width: 66vh;
+  height: 80vh;
+ margin-left: -243px;
+  z-index: -1;
+}
+
+.right-side-box-new{
+  background-image: url('../Images/background.png');
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.fb-box {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+  height: 60px;
+  margin-left: 10%;
+  margin-top: 33%;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+}
+.signup-input-new span {
+  position: absolute;
+  margin-top: -30%;
+  margin-left: 75%;
+}
+.signin-btn{
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 85%;
+  background-color: white;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+}
+.left-side-box h2 {
+  position: absolute;
+  margin-top: 375px;
+  margin-left: 20%;
+}
+.gog-box {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  height: 60px;
+  margin-left: -39%;
+  margin-top: 160px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+}
+.passc-icons{
+  position: absolute;
+    color: black;
+    margin-left:  182%;
+    margin-top: -54px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+}

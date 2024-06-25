@@ -1,0 +1,257 @@
+//**** ANIMATED ACCORDION WITHOUT JAVASCRIPT ****//
+// MORE INFO: https://wynand.academy/snippets
+
+//**** SETTINGS ****//
+
+
+details {
+	box-sizing: border-box;
+
+	//Transition for the animation
+	transition: all 0.3s ease-out;
+
+	//Some extra styling
+	font-size: 14px;
+	color: var(--grey);
+	background: var(--grey-light);
+	border-radius: 10px;
+	overflow: hidden;
+
+	&[open] {
+
+		//Animate spacing
+		padding-bottom: 20px;
+
+		summary {
+           
+background-color: #34327C;
+width: 100%;
+			//Animate spacing
+			margin-bottom: 10px;
+
+			//Rotate custom arrow
+			&::before {
+				transform: rotate(-135deg) translate(-30% , 0%);
+			}
+		}
+	}
+
+	&:not(:first-child) {
+		margin-top: 10px;
+	}
+}
+
+summary {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+    background-color: #34327C;
+    color: #fff;
+	position: relative;
+    width: 470px;
+	padding: 10px 16px;
+
+	//Transition for the animation
+	transition: margin 0.3s ease-out;
+
+	//Extra styling
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+
+	//Remove the default arrow
+	&::-webkit-details-marker {
+		display: none;
+	}
+
+	//Add custom arrow
+	&::before {
+		content: '';
+
+		display: block;
+
+		height: 6px;
+		flex: 0 0 6px;
+
+		// margin-right: 20px;
+
+		border-right: 2px solid var(--grey);
+		border-bottom: 2px solid var(--grey);
+
+		transition: all 0.3s;
+
+		transform: rotate(45deg) translate(0, -30%);
+	}
+}
+
+.content {
+	padding: 0 20px;
+}
+
+//**** BASE STYLING ****//
+
+//Load Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 20px;
+
+	box-sizing: border-box;
+
+	@media only screen and (min-width: 900px) {
+		padding: 10px;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 700px;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+//**** ANIMATED ACCORDION WITHOUT JAVASCRIPT ****//
+// MORE INFO: https://wynand.academy/snippets
+
+//**** SETTINGS ****//
+
+
+details {
+	box-sizing: border-box;
+
+	//Transition for the animation
+	transition: all 0.3s ease-out;
+
+	//Some extra styling
+	font-size: 14px;
+	color: var(--grey);
+	background: var(--grey-light);
+	border-radius: 10px;
+	overflow: hidden;
+
+	&[open] {
+
+		//Animate spacing
+		padding-bottom: 20px;
+
+		summary {
+           
+background-color: #34327C;
+width: 100%;
+			//Animate spacing
+			margin-bottom: 10px;
+
+			//Rotate custom arrow
+			&::before {
+				transform: rotate(-135deg) translate(-30% , 0%);
+			}
+		}
+	}
+
+	&:not(:first-child) {
+		margin-top: 10px;
+	}
+}
+
+summary {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+    background-color: #34327C;
+    color: #fff;
+	position: relative;
+    width: 270px;
+	padding: 10px 16px;
+
+	//Transition for the animation
+	transition: margin 0.3s ease-out;
+
+	//Extra styling
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+
+	//Remove the default arrow
+	&::-webkit-details-marker {
+		display: none;
+	}
+
+	//Add custom arrow
+	&::before {
+		content: '';
+
+		display: block;
+
+		height: 6px;
+		flex: 0 0 6px;
+
+		// margin-right: 20px;
+
+		border-right: 2px solid var(--grey);
+		border-bottom: 2px solid var(--grey);
+
+		transition: all 0.3s;
+
+		transform: rotate(45deg) translate(0, -30%);
+	}
+}
+
+.content {
+	padding: 0 20px;
+}
+
+//**** BASE STYLING ****//
+
+//Load Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #FDFBE8;
+	z-index: 1;
+	height: 400px;
+	border-radius: 10px;
+	-webkit-box-shadow: 8px 15px 15px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 15px 15px -11px rgba(0,0,0,0.75);
+box-shadow: 8px 15px 15px -11px rgba(0,0,0,0.75);
+overflow: auto;
+
+	@media only screen and (min-width: 900px) {
+		padding: 10px;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 700px;
+}
+
+
+
+	
+}
+@media (min-width:768px) and (max-width:1024px){
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-top: 15%;
+	margin-right: 30%;
+}
+}

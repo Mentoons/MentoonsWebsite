@@ -1,0 +1,58 @@
+.main-item-adding h1{
+    position: absolute;
+    font-size: 60px;
+    text-align: center;
+    color: red;
+    margin-left: 17%;
+}
+.itemsadding-form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: aqua;
+    width: 50%;
+    padding: 40px;
+    border-radius: 10px;
+}
+.itemsadding-form input:nth-child(5){
+    margin-left: 10%;
+}
+.itemsadding-form input{
+    width: 100%;
+    margin-top: 5%;
+    border: 1px solid tomato;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.itemsadding-form button{
+    background-color:  yellowgreen;
+    color: aliceblue;
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.age-cat{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-left: -70%;
+}
+.pdf{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; 
+    width: 700px;
+}
+.video{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; 
+    width: 700px;
+}

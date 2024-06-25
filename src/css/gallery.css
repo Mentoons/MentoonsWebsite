@@ -1,0 +1,192 @@
+.image-gallery {
+  width: 100%;
+  height: 180vh;
+  background-color: #FDFBE8;
+  position: relative;
+  z-index: -3;
+  }
+  .image-gallery h1{
+    position: absolute;
+    margin-top: 10%;
+  }
+  .join-heading-gallry h1{
+    background-color: #34327C;
+    margin-left: 30%;
+    font-size: 45px;
+    color: white;
+    font-weight: 1000;
+    margin-top: 20px;
+    width: 40%;
+    text-align: center;
+    border-radius: 100%;
+    padding: 30px;
+  }
+
+.gallery-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-left: 43%;
+    margin-top: 18%;
+    position: absolute;
+}
+.gallery-pic p{
+    position: absolute;
+    font-size: 50px;
+    color:#FEEEAB;
+    top:80px;
+   
+    
+}
+
+.gallery-images{
+      width: 100px;
+}
+.gallery-conatainer button{
+  position: absolute;
+  margin-top: 34%;
+  margin-left: 50%;
+
+
+}
+.gallery-photos{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 32%;
+  gap: 2rem;
+
+}
+.gallery-photos img:hover{
+  transform: scale(1.3);
+  z-index: 2;
+  border: 6px solid rebeccapurple;
+}
+.gallery-photos img{
+  border-radius: 50%;
+  transition: 1s;
+  width: 350px;
+  
+}
+.gallery-conatainer button:nth-child(1){
+  background-color: rebeccapurple;
+  height: 40px;
+  width: 120px;
+  margin-left: 80%;
+  color: #FEEEAB;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.gallery-conatainer button:nth-child(1):hover{
+  color:rebeccapurple;
+  background-color: #FEEEAB;
+}
+.gallery-conatainer button:nth-child(2){
+  background-color: red;
+  height: 40px;
+  width: 120px;
+  margin-left: 20%;
+  color: #FEEEAB;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.gallery-conatainer button:nth-child(3){
+  background-color: green;
+  height: 40px;
+  width: 120px;
+  color: #FEEEAB;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.gallery-btn{
+ display: flex;
+}
+.glry-anime{
+  position: absolute;
+  width: 400px;
+  margin-top: 10%;
+}
+  @media screen and (max-width:600px){
+    .glry-anime{
+      position: absolute;
+      width: 200px;
+  
+    }
+    .image-gallery {
+      width: 100%;
+      height: 130vh;
+      background-color: #FDFBE8;
+      z-index: -11;
+      }
+      .image-gallery h1{
+        position: absolute;
+        margin-top: 20%;
+        font-size: 60px;
+      }
+      .gallery-pic img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        margin-left: 35%;
+        margin-top: -29%;
+        position: absolute;
+    }
+    .gallery-pic{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      margin-left: 14%;
+      margin-top: 42%;
+      position: absolute;
+  }
+  .gallery-pic p{
+      position: absolute;
+      font-size: 30px;
+      color:#FEEEAB;
+      top:-100px;
+      left: 44%;
+     
+      
+  }
+  .gallery-images{
+        width: 100px;
+  }
+  .gallery-photos{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60%;
+    gap: 2rem;
+  
+  }
+  .gallery-photos img:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    border: 6px solid rebeccapurple;
+  }
+  .gallery-photos img{
+    border-radius: 50%;
+    transition: 1s;
+    width: 170px;
+    
+  }
+  .join-heading-gallry h1{
+    background-color: #34327C;
+    margin-left: 20%;
+    font-size: 25px;
+    color: white;
+    font-weight: 1000;
+    margin-top: 20px;
+    width: 60%;
+    text-align: center;
+    border-radius: 100%;
+    padding: 10px;
+  }
+  }

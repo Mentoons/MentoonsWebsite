@@ -1,0 +1,110 @@
+ /* src/Carousel.css */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Full height of viewport */
+}
+
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  display: none !important; /* Hide next and prev buttons */
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-dot:hover,
+.custom-dot.slick-active {
+  background-color: white;
+}
+
+ 
+ 
+ .caro-container img{
+    margin-top: 4%;
+    width: 110%;
+    height: 100vh;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of viewport */
+}
+.main-para{
+    position: absolute;
+    background-color: aliceblue;
+    border: 7px solid yellow;
+    width: 540px;
+    min-height: 200px;
+    margin-top: -330px;
+    margin-left: 30px;
+    border-radius:225px 45px 325px 75px/15px 125px 35px 155px ;
+}
+.main-para h3{
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.main-para p{
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+}
+.bee{
+    width: 50px;
+}
+@media screen and (max-width:600px) {
+    .caro-container{
+        margin-top: 80px;
+    }
+    .caro-container img{
+        margin-top: 4%;
+        width: 110%;
+        height: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }
+    .main-para{
+        position: absolute;
+        background-color: aliceblue;
+        opacity: 0.9;
+        border: 7px solid yellow;
+        width: 330px;
+        height: 150px;
+        margin-top: -200px;
+        margin-left: 30px;
+        border-radius: 81% 19% 81% 19% / 3% 100% 0% 97% ;
+    }
+    .main-para h3{
+        margin: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .main-para p{
+        font-size: 14px;
+        margin: 20px;
+        text-align: center;
+    }
+}
