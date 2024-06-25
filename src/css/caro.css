@@ -108,12 +108,12 @@
         text-align: center;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .caro-container img{
-        margin-top: 4%;
-        width: 110%;
-        height: 100%;
-        aspect-ratio: 3/2;
-        object-fit: cover;
-    }
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+   .caro-container img {
+    aspect-ratio: 3 / 2;
+    height: 65vh;
+    margin-top: 7%;
+    object-fit: cover;
+    width: 110%;
+}
 }
