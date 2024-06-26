@@ -17,21 +17,24 @@ const Team = () => {
   </div> 
   <div className="videobox">
 
-    <video className='ateamvideo-team'width={'600px'} autoPlay={false} controls={true}>
+    <video className='teamvideo-team' width={'600px'} autoPlay={false} controls={true}>
       <source src={Teamvideo} type='video/mp4' />
     </video>
 
-    <div className="teamtxt">
-      <h1>
+    <div className="teamtxt-a">
+      {/* <h1>
       Meet Us
-      </h1>
+      </h1> */}
+      <h2>Meet Us</h2>
       <p>
       Mentoons is a result of the creative amalgamation of a diverse team coming<br></br> together - our founder, talented developers, creative illustrators, skillfull graphic designers,<br></br> adept content writers, melodious music producer, and experienced psychologists.
       </p>
     </div>
     </div>
  
+          <section className="teambord-bg">
 
+          </section>
    </div>
   )
 }

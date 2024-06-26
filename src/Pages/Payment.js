@@ -16,7 +16,7 @@ const Payment = () => {
                 <input type='text' placeholder='Please Enter Your Name' />
                 <label>Email : </label>
                 <input type='text' placeholder='Please Enter Your Email' />
-                <label>Parent's Name :  </label>
+                <label>Phone :  </label>
                 <input type='text' placeholder='Please Enter Your Phone Number' />
 
             </div>

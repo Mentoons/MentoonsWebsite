@@ -72,5 +72,8 @@
         border-radius: 10px;
         box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
     }   
+    .revive-container {
+        height: 80vh;
+    }
     
 }

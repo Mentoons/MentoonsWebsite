@@ -14,29 +14,39 @@ const Teamcarosel = ({ data }) => {
     
     
   return (
-   <>
-    <div className="taemcaro">
-        <SlArrowLeft  onClick={prevSlide} className='arrow  arrow-left'/>
-        {data.map((item,inx)=>{
-           
-           return  <ul>
-                <li><img src={item.src} key={inx}  className={slide === inx ? "slide" : "slide-hidden"} /></li>
+    <>
+      <div className="taemcaro" data-aos="fade-right" data-aos-duration="1000">
+        <SlArrowLeft onClick={prevSlide} className="arrow  arrow-left" />
+        {data.map((item, inx) => {
+          return (
+            <ul>
+              <li>
+                <img
+                  src={item.src}
+                  key={inx}
+                  className={slide === inx ? "slide" : "slide-hidden"}
+                />
+              </li>
             </ul>
-             
-                
-            
-
-            
+          );
         })}
-        <SlArrowRight onClick={nextSlide} className='arrow right-arrow'/>
-        <span className='indicetors'>
-            {data.map((_,inx)=>{
-                return <button className={slide ===inx ? "indecetor" : "indecetor indecetor-inactive"} key={inx} onClick={()=> setslide(inx)}></button>
-            })}
+        <SlArrowRight onClick={nextSlide} className="arrow right-arrow" />
+        <span className="indicetors">
+          {data.map((_, inx) => {
+            return (
+              <button
+                className={
+                  slide === inx ? "indecetor" : "indecetor indecetor-inactive"
+                }
+                key={inx}
+                onClick={() => setslide(inx)}
+              ></button>
+            );
+          })}
         </span>
-    </div>
-   </>
-  )
+      </div>
+    </>
+  );
 }
 
 export default Teamcarosel

@@ -1,5 +1,11 @@
 .join-container{
     background-image: url('../Images/bg1.png');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    width: 100%
    
 }
 .teamvideo-team{
@@ -12,8 +18,20 @@
     color: black;
 }
 .main-join{
-    background-color: antiquewhite;
     width: 90%;
     margin-left: 5%;
     height: 140vh;
+}
+@media screen and (max-width:600px){
+    .main-join {
+    width: 90%;
+    /* margin-left: 5%; */
+    height: auto;
+    margin: auto;
+}
+.teamvideo-team {
+    border-radius: 20px;
+    width: 60%;
+    margin: 20px auto;
+}
 }

@@ -4,6 +4,12 @@
     width: 100%;
 
 }
+.join-carosel{
+    width: 50%;
+}
+.join-txt p h1{
+    padding: 0 1em;
+}
 .about-txt{
     display: flex;
     /* justify-content: space-around; */
@@ -20,7 +26,7 @@
     text-align: center;
     font-family: 'Caveat', cursive;
     color: black;
-    
+    font-size: 17px;
 }
 .per-icons{
     position: absolute;
@@ -36,19 +42,16 @@
     margin-left: 49%;
     color: #EC9600;
 }
-.join-heading h1{
+.join-heading h1 {
     background-color: #34327C;
-    margin-left: 30%;
-    text-align: center;
-    font-size:45px;
+    font-size: 45px;
     color: white;
     font-weight: 1000;
-    margin-top: 20px;
     width: 40%;
     text-align: center;
-    border-radius:100%;
+    border-radius: 100%;
     padding: 30px;
-   
+    margin: auto;
 }
 
 .grass{
@@ -74,14 +77,21 @@
     position: absolute;
     top: 820px;
 }
-
+ .join-txt{
+        width: 50%;
+        margin-left: -10%;
+    }
 @media screen and (max-width:600px){
+    .joincointainer {
+    height: auto;
+}
     .birdiv{
         position: absolute;
         top: 520px;
         width: 150%;
     }
-    .joincointainer{
+    .join-txt{
+        width: 50%;
     }
     .join-txt h3{
         font-size: 40px;
@@ -101,14 +111,12 @@
         width: 70%;
         text-align: center;
         border-radius:100%;
-        padding: 10px;
-        position: absolute;
-       
+        padding: 10px;      
     }
     .per-icons{
         position: absolute;
         font-size: 40px;
-        margin-top: 0px;
+        margin-top: -30px;
         margin-left: 45%;
         color: #EC9600;
         z-index: 1;
@@ -116,7 +124,7 @@
     .per-iconsa{
         position: absolute;
         font-size: 40px;
-        margin-top: 0px;
+        margin-top: -30px;
         margin-left: 49%;
         color: #EC9600;
         z-index: 1;
@@ -134,18 +142,22 @@
         font-family: 'Caveat', cursive;
        
     }
-    .about-txt{
-        display: block;
-        /* justify-content: space-around; */
-        align-items: center;
-    }
+    .about-txt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.join-carosel {
+    width: 100%;
+}
+.taemcaro{
+    margin-left: 10%;
+}
 }
 
 
-@media screen and (max-width:600px){
-    
-}
-@media (min-width:768px) and (max-width:1024px){
+@media (min-width:600px) and (max-width:1024px){
     .join-heading h1{
         background-color: #34327C;
         margin-left:30%;

@@ -121,7 +121,7 @@ const Workshop = () => {
                                       Activity Description <SlArrowDown />
                                     </summary>
                                     <div className="content">
-                                      <ul>
+                                      <ul className="work-shop-ul">
                                         <li>{linea}</li>
                                         <li>{lineb}</li>
                                         <li>{linec}</li>

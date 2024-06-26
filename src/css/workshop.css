@@ -59,29 +59,36 @@ font-family: 'Archivo Black', sans-serif;
 /* empoer css */
 
 @media screen and (max-width:600px) {
+.workshop-side-btns {
+        position: static;
+        /* margin-top: 10px; */
+        margin-left: 0%;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin: auto 10%;
+    }
     .container-workshpo h1 {
         font-size: 40px;
     }
     .workshop{
-        position: absolute;
-        margin-top: 55%;
-        height: 100vh;
+        margin-top: 0%;
+        height: 60vh;
     }
     .main-Workshop-conatiner{
-        margin-top: 65%;
+        margin-top: 0%;
         display: flex;
         flex-direction: column;
-        gap: 7rem;
+        gap: 0rem;
        
     }
     .workshop-box{
         background-color: #FDFBE8;
-        margin-top: 70px;
-        margin-left: 50%;
         width: 0px;
         height: 70%;
         border-radius: 20px;
-        
+    margin-top: 0px;
+    margin-left:10%;
     }
     
     .workshop-side-btns button{
@@ -90,9 +97,7 @@ font-family: 'Archivo Black', sans-serif;
         padding: 20px;
         color: aliceblue;
         border-radius: 10px 10px 0px 0px ;
-        margin-top:89px;
-        margin-left: -105px;
-        margin-right: 90px;
+        margin:auto;
         display: block  ;
         
     }

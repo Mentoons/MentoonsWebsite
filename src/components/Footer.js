@@ -11,7 +11,7 @@ const Footer = () => {
           {/* <img src={grndownwave} width={'100%'} /> */}
         </div>
         <div className="footer">
-        <footer>
+        
         <div className="subscribe">
             <p>Mentoons is more than a service. <br></br>We are a guiding light to evolving personalities.<br></br> Help us help you transform your life today!</p>
             <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
@@ -43,11 +43,6 @@ const Footer = () => {
             <div className="opening-hours">
             <h1>OPENING HOURS:</h1>
             <div className="title-heading">
-
-            <th>
-                <tr>Monday to Friday</tr>
-                <tr>10 a.m. to 7 p.m.</tr>
-            </th>
             <th className='th'>
                 <tr>Weekends / Holidays</tr>
                 <tr>	available on
@@ -57,9 +52,7 @@ appointment
             </th>
             </div>
             </div>
-        </footer>
         
-       
 
     </div>
     <div className="copyright">

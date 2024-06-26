@@ -3,7 +3,6 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 50%;
     height: 300px;
     border-radius: 30px;
     margin-top: 20%;
@@ -17,10 +16,9 @@ ul li{
     border-radius: 0.5px;
     box-shadow: 0px 0px 7px #666;
     border-radius: 50%;
-    width: 900%;
-    
-    margin-left: 130px;
-    border: 8px solid #34327C;
+    width: 60%;
+        border: 8px solid #34327C;
+        margin: auto;
 }
 
 .slide img{
@@ -37,27 +35,29 @@ ul li{
     margin-left: -60px;
     background-color: turquoise;
     border-radius: 100%;
+    display: none;
 }
 .right-arrow {
     margin-right: -570px;
     background-color: turquoise;
     border-radius: 100%;
+        display: none;
+
 }
-.indicetors{
+.indicetors {
     display: flex;
-    position:absolute;
+    position: absolute;
     bottom: 1rem;
     z-index: 1;
-    margin: -30px;
-    margin-left: 220px;
-  
-    background-color: #34327C;
-    
+    margin: -134px;
+    margin-left: -123px;
+    margin-top: 78px;
+    /* background-color: #34327C; */
 }
 .indecetor{
-    background-color: #fff;
-    height: 0.5rem;
-    width: 0.5rem;
+    background-color: #d12881;
+    height: 1rem;
+    width: 1rem;
     border-radius: 100%;
     border: none;
     outline: none;
@@ -71,13 +71,13 @@ ul li{
 background-color: #666;
 }
 @media screen and (max-width:600px){
-    .slide {
+     .slide {
         border-radius: 0.5px;
         box-shadow: 0px 0px 7px #666;
         height: 70%;
-        width: 140%;
+        width: 70%;
         border-radius: 50%;
-        margin-left: 110px;
+        margin-left: 28px;
     }
     .arrow{
         position: absolute;

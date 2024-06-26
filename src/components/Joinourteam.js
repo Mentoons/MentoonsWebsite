@@ -7,13 +7,38 @@ import { BsPersonArmsUp } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 const Joinourteam = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-  };
+ const settings = {
+   dots: true,
+   infinite: true,
+   speed: 500,
+   slidesToShow: 3,
+   slidesToScroll: 3,
+   responsive: [
+     {
+       breakpoint: 1024, // Large devices (laptops, desktops)
+       settings: {
+         slidesToShow: 2,
+         slidesToScroll: 2,
+       },
+     },
+     {
+       breakpoint: 768, // Medium devices (tablets)
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+       },
+     },
+     {
+       breakpoint: 480, // Small devices (phones)
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+       },
+     },
+     // You can add more breakpoints as needed
+   ],
+ };
+
   return (
     <div className="join-container">
       <div className="main-join">

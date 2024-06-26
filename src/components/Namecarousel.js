@@ -120,11 +120,6 @@ const data = [
     position : `Backend Developer`
     },
     {
-      name : `Dilsha`,
-      img : require("../Images/dilsha.jpg"),
-      position : `Backend Developer`
-      },
-    {
       name : `Thameem Ansari`,
   img :require("../Images/Thameem.jpg"),
   position : `Frontend Developer`

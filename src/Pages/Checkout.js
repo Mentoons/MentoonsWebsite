@@ -11,7 +11,7 @@ const Checkout = ({product,deleteItem}) => {
 
   return (
     <div className="top-container">
-      <h2>Checkout</h2>
+      <h2>Im Ready to payP</h2>
       {product?.length ? (
         <div className="main-cart">
           <div className="headings">
@@ -33,8 +33,8 @@ const Checkout = ({product,deleteItem}) => {
             );
           })}
           <p className="total">Total Price : {amount}</p>
-          {/* to='/Payment' */}
-          <NavLink>
+
+          <NavLink to="/Payment">
             <button className="check-btn">Payment</button>
           </NavLink>
         </div>

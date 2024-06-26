@@ -64,7 +64,7 @@
 @media screen and (max-width:600px){
     .contact-main{
         background-color: #FDFBE8;
-        height: 175vh;
+        height: autoc;
         width: 100%;
         margin-top: 20px
     }
