@@ -78,3 +78,9 @@
     }
     
 }
+@media screen and (min-width:600px) and (max-width:1020px) {
+    .revive-container {
+    height: 80vh;
+   
+}
+}

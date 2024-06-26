@@ -32,9 +32,6 @@
 
 }
 .contact-box h1{
-    position: absolute;
-    margin-top: -90px;
-    margin-left: -320px;
      color: black;
      font-size: 50px;
 }
@@ -64,7 +61,7 @@
 @media screen and (max-width:600px){
     .contact-main{
         background-color: #FDFBE8;
-        height: 180vh;
+        height: 100vh;
         width: 100%;
         margin-top: 20px
     }
@@ -73,27 +70,45 @@
         top: 650px;
     
     }
-    .contact-box{
-        position: absolute;
-        top: 300px;
-        left: 69%;
+  .contact-main-conatiner {
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 2rem;
+    }
+    .joinmsg-box{
+        gap: 2rem;
     }
     .contact-btn{
-        background-color: #00AEEF;
-        margin-top: 560px;
-        margin-left: 25%;
-        padding: 10px;
-        color: white;
-        border-radius: 355px 45px 225px 75px/15px 225px 15px 255px ;
+        position: static;
+    background-color: #d12881;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 10px;
+    color: white;
+    border-radius: 355px 45px 225px 75px / 15px 225px 15px 255px;
     }
-    .contact-box input{
-        margin-left: -159%;
-        width: 170%;
+   .contact-box input {
+        width: 122%;
         padding: 10px;
-        margin-top: 10px;
         border-radius: 10px;
         box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
-        border: 2px solid gainsboro ;
-    
+        border: 2px solid gainsboro;
+        margin: 20px auto;
     }
+}
+@media screen and (min-width:600px)  and (max-width:1024px){
+    .contact-main-conatiner {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
 }

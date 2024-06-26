@@ -26,7 +26,7 @@ const Home = () => {
    <Carousel />
    <Header />
    <Join />
-   <Workshop />
+   {/* <Workshop /> */}
    <Team />
    <Namecarousel/>
  

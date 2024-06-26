@@ -36,6 +36,7 @@ const Contact = () => {
 
       <div className="contact-box">
         <h1>Write Us</h1>
+      <div className="joinmsg-box">
       <input type='text'placeholder='Name' required/>
       <br></br>
       <input type='text'placeholder='Email ID' required/>
@@ -43,10 +44,12 @@ const Contact = () => {
       <input type='text'placeholder='Meetup Group' required/>
       <br></br>
       <input type='text' placeholder='Enter Your Message' />
+
+      </div>    
       </div>    
           
-   </div>
    <button className='contact-btn'>Send message</button>
+   </div>
     </div>
     </>
    
