@@ -123,8 +123,8 @@
       z-index: -11;
       }
       .image-gallery h1{
-        position: absolute;
-        margin-top: 20%;
+        /* position: absolute; */
+        /* margin-top: 20%; */
         font-size: 60px;
       }
       .gallery-pic img{
@@ -133,8 +133,8 @@
         align-items: center;
         width: 300px;
         margin-left: 35%;
-        margin-top: -29%;
-        position: absolute;
+        /* margin-top: -29%; */
+        /* position: absolute; */
     }
     .gallery-pic{
       display: flex;
@@ -190,4 +190,15 @@
     border-radius: 100%;
     padding: 10px;
   }
+  }
+  @media screen and (min-width:600px) and (max-width:1020px){
+    .gallery-photos {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 58%;
+    gap: 2rem;
+}
   }

@@ -71,6 +71,16 @@ ul li{
 background-color: #666;
 }
 @media screen and (max-width:600px){
+    .indicetors {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+    margin: -60px;
+    margin-left: -157px;
+    margin-top: 78px;
+    /* background-color: #34327C; */
+}
      .slide {
         border-radius: 0.5px;
         box-shadow: 0px 0px 7px #666;

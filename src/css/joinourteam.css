@@ -35,3 +35,10 @@
     margin: 20px auto;
 }
 }
+@media screen and (min-width:600px) and (max-width:1024px){
+    .main-join {
+    width: 90%;
+    margin-left: 5%;
+    height: 61vh;
+}
+}
