@@ -60,13 +60,11 @@ font-family: 'Archivo Black', sans-serif;
 
 @media screen and (max-width:600px) {
 .workshop-side-btns {
-        position: static;
-        /* margin-top: 10px; */
         margin-left: 0%;
         display: flex;
         flex-direction: row;
-        gap: 2rem;
-        margin: auto 10%;
+        gap: 1rem;
+        margin: auto ;
     }
     .container-workshpo h1 {
         font-size: 40px;
@@ -94,7 +92,7 @@ font-family: 'Archivo Black', sans-serif;
     .workshop-side-btns button{
        
         background-color: #34327C;
-        padding: 20px;
+        padding: 10px;
         color: aliceblue;
         border-radius: 10px 10px 0px 0px ;
         margin:auto;

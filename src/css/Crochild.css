@@ -64,16 +64,17 @@
     border-radius: 355px 45px 225px 75px/15px 225px 15px 255px ;
 }
 @media screen and (max-width:600px) {
-    .revive-form{
+       .revive-form {
         background-color: white;
-        width: 450px;
+        width: 104%;
         height: 900px;
         float: right;
         border-radius: 10px;
         box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
-    }   
+        padding: 0 1em;
+    }  
     .revive-container {
-        height: 80vh;
+        height: 120vh;
     }
     
 }
