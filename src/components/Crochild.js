@@ -4,6 +4,8 @@ const Crochild = () => {
   return (
     <div>
       <div className="revive-container">
+        <div className="revive-form-main">
+
         <div className="revive-form">
           <h1>"Let’s Revive"</h1>
           <h2>OUR MEET UP GROUP</h2>
@@ -25,6 +27,7 @@ const Crochild = () => {
           </div>
           
           <button className='join-btn'>Together, let's revive and reconnect!</button>
+        </div>
         </div>
       </div>
     </div>

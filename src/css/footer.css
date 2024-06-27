@@ -191,6 +191,9 @@ footer{
     border:#dc2743;
   }
   @media screen and (max-width:600px){
+    .hole-container{
+      margin: 20px auto;
+    }
     .copyright{
         text-align: center;
         font-size: 15px;
@@ -235,5 +238,6 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    gap: 2rem;
 }
   }

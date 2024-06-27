@@ -14,7 +14,7 @@ const Footer = () => {
         
         <div className="subscribe">
             <p>Mentoons is more than a service. <br></br>We are a guiding light to evolving personalities.<br></br> Help us help you transform your life today!</p>
-            <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+            <h1>Mentoons Newsletter</h1>
             <div className="input-group">
     <input type="email" className="input-footer" id="Email" name="Email" placeholder="Email Address" autocomplete="off" />
     <input className="button--submit" value="Subscribe" type="submit" />

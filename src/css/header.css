@@ -113,23 +113,21 @@
 }
 
 @media screen and (max-width:600px) {
-    .white-bg{
+      .white-bg {
         display: flex;
         margin-top: 30%;
         margin-left: 10%;
-        position: absolute;
+        /* position: absolute; */
         z-index: 1;
         color: #696767;
         border-radius: 20px;
         border: 0;
         background-color: #fff;
         width: 80%;
-        height: 40%;
+        min-height: 400px;
         box-shadow: none;
-        margin-bottom: 0px; 
-        -webkit-box-shadow: 6px 9px 20px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 6px 9px 20px 0px rgba(0,0,0,0.75);
-    box-shadow: 6px 9px 20px 0px rgba(0,0,0,0.75);
+        margin-bottom: 0px;
+        box-shadow: 6px 9px 20px 0px rgba(0, 0, 0, 0.75);
     }
     .white-bg p{
         text-align: center;

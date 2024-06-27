@@ -1,21 +1,21 @@
 .revive-container{
     background-image: url('../Images/Downimg.jpg');
-    height: 130vh;
     width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-size: 100% 100%; */
-    width:100%;
-    top: 451px;
+    min-height: auto;
    
     padding: 28px;
+}
+.revive-form-main{
+    height: 120vh;
 }
 .revive-form{
     background-color: white;
     width: 650px;
-    height: 800px;
+    min-height: 800px;
     float: right;
     border-radius: 10px;
     box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
@@ -55,32 +55,32 @@
     
     padding: 40px;
 }
-.join-btn{
+.join-btn {
     background-color: #d12881;
-    margin-top: 20px;
-    margin-left: 25%;
     padding: 10px;
     color: white;
-    border-radius: 355px 45px 225px 75px/15px 225px 15px 255px ;
+    border-radius: 355px 45px 225px 75px / 15px 225px 15px 255px;
+    margin: 40px 50px;
 }
 @media screen and (max-width:600px) {
        .revive-form {
         background-color: white;
         width: 104%;
-        height: 900px;
         float: right;
         border-radius: 10px;
         box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
         padding: 0 1em;
     }  
     .revive-container {
-        height: 120vh;
+        height: auto;
     }
     
 }
 @media screen and (min-width:600px) and (max-width:1020px) {
     .revive-container {
-    height: 80vh;
-   
+    height: auto;
+}
+.revive-form-main {
+    height: 70vh;
 }
 }

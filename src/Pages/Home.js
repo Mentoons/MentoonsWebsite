@@ -22,19 +22,19 @@ const Home = () => {
     <div className='home-page'>
     
    
-   <Navbar />
-   <Carousel />
+   {/* <Navbar /> */}
+   {/* <Carousel />
    <Header />
-   <Join />
+   <Join /> */}
    {/* <Workshop /> */}
-   <Team />
+   {/* <Team />
    <Namecarousel/>
  
    <Gototop />
    <Joinourteam />
-     <Gallery />
+     <Gallery /> */}
    <Crochild />
-   <Contact />
+   {/* <Contact /> */}
    <Footer /> 
 
     </div>

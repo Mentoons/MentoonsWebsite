@@ -10,12 +10,12 @@ const Contact = () => {
     <>
      
 <div className='contact-main'>
-<div className="join-heading">
+{/* <div className="join-heading">
 
 <BsPersonArmsUp className='per-icons'/>
 <BsPersonArmsUp className='per-iconsa'/>
 <h1>CONTACT US</h1>
-  </div>
+  </div> */}
    <div className="contact-main-conatiner">
    <div className="information">
     <h1 >INFORMATION</h1>
@@ -35,7 +35,7 @@ const Contact = () => {
    </div>
 
       <div className="contact-box">
-        <h1>Write Us</h1>
+        <h1>Write to Us</h1>
       <div className="joinmsg-box">
       <input type='text'placeholder='Name' required/>
       <br></br>
@@ -46,9 +46,10 @@ const Contact = () => {
       <input type='text' placeholder='Enter Your Message' />
 
       </div>    
+      
+   <button className='contact-btn'>Send message</button>
       </div>    
           
-   <button className='contact-btn'>Send message</button>
    </div>
     </div>
     </>
