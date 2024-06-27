@@ -2,7 +2,12 @@
    
     height: 100vh;
     width: 100%;
-
+    background-image: url('../Images/bgcity.png');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 .join-carosel{
     width: 50%;
@@ -28,15 +33,14 @@
     color: black;
     font-size: 17px;
 }
-.per-icons{
-    position: absolute;
+.per-icons {
     font-size: 40px;
-    margin-top: -18px;
-    margin-left: 47%;
+    margin-top: 1px;
+    margin-left: 45pc;
     color: #EC9600;
+    position: absolute;
 }
 .per-iconsa{
-    position: absolute;
     font-size: 40px;
     margin-top: -18px;
     margin-left: 49%;
@@ -73,8 +77,9 @@
     
 }
  .join-txt{
-        width: 50%;
-        margin-left: -10%;
+    padding: 30px 1em;
+    min-height: auto;
+
     }
 @media screen and (max-width:600px){
     .joincointainer {
@@ -155,18 +160,14 @@
 }
     .join-heading h1{
         background-color: #34327C;
-        margin-left:30%;
         text-align: center;
         font-size:25px;
         color: white;
         font-weight: 1000;
-        margin-top:30px;
         width: 40%;
         text-align: center;
         border-radius:100%;
         padding: 10px;
-        position: absolute;
-       
     }
     .about-txt {
     display: flex;
@@ -175,7 +176,6 @@
     align-items: center;
 }
     .per-icons{
-        position: absolute;
         font-size: 40px;
         margin-top: 0px;
         margin-left: 45%;
@@ -183,7 +183,6 @@
         z-index: 1;
     }
     .per-iconsa{
-        position: absolute;
         font-size: 40px;
         margin-top: 0px;
         margin-left: 47%;
@@ -206,8 +205,9 @@
     }
 }
 @media (min-width:768px) and (max-width:1024px){
-    .joincointainer {
-        height: 75vh;
+       .joincointainer {
+        height: auto;
         width: 100%;
+        padding: 30px 1em;
     }
 }

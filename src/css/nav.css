@@ -32,6 +32,7 @@ nav{
     width: 100%;
     border-bottom: 1px solid  #FF7300;
     font-family: 'Poppins', sans-serif;
+    top: 0;
     
 }
 nav .nav-links{

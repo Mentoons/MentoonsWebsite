@@ -1,8 +1,8 @@
 .contact-main{
     background-color: #FDFBE8;
-    min-height: 70vh;
+    min-height: 50vh;
     width: 100%;
-    
+    padding: 20px 1em;
 
 }
 .contact-btn{

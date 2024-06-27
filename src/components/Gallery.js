@@ -39,7 +39,6 @@ const Gallery = () => {
   ];
   return (
     <div className='image-gallery'>
-      <Lottie animationData={gallery} className='glry-anime' />
 
       <div className="join-heading-gallry">
 
@@ -47,6 +46,7 @@ const Gallery = () => {
 <BsPersonArmsUp className='per-iconsa'/>
 <h1>OUR GALLERY</h1>
   </div>
+      <Lottie animationData={gallery} className='glry-anime' />
       <div>
         <div className='gallery-photos'> 
           {

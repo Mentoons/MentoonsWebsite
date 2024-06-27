@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import AOS from 'aos';
 import { Provider } from 'react-redux';
 import store from './redux/action/store'
+import { ToastContainer } from "react-toastify";
 
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
@@ -15,9 +16,10 @@ AOS.init();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={store} >
-   <App />
-   </Provider>
+    <Provider store={store}>
+      <App />
+      <ToastContainer />
+    </Provider>
   </React.StrictMode>
 );
 

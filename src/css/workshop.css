@@ -1,18 +1,20 @@
 .workshop{
     background-image: url('../Images/bgdots.png');
-    height: 100vh;
+    height: auto;
+    background-position: center;
+    background-size: inherit;
+    background-attachment: fixed;
     width: 100%;
 }
-.workshop-box{
-    background-color: #FDFBE8;
-    margin-top: 70px;
-    margin-left: 10%;
+.workshop-box {
+   background-color: #FDFBE8;
     width: 80%;
-    height: 70%;
-    border-radius: 20px;
+    height: auto;
+    margin: auto;
+    padding: 40px 1em;
+    border-radius: 30px;
+    margin-bottom: 50px;
 }
-
-
 .main-Workshop-conatiner{
     display: flex;
     gap: 7rem;
@@ -48,11 +50,11 @@ font-family: 'Archivo Black', sans-serif;
     background-color:  #D12881 ;
 }
 .workshop-side-btns{
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 35%;
-    display: flex;
-    flex-direction: row;
+ display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     gap: 2rem;
   
 }
@@ -80,13 +82,13 @@ font-family: 'Archivo Black', sans-serif;
         gap: 0rem;
        
     }
-    .workshop-box{
+    .workshop-box {
         background-color: #FDFBE8;
-        width: 0px;
-        height: 70%;
+        width: 56%;
+        height: 36%;
         border-radius: 20px;
-    margin-top: 0px;
-    margin-left:10%;
+        /* margin-top: 0px; */
+        margin-left: 20%;
     }
     
     .workshop-side-btns button{
@@ -103,12 +105,8 @@ font-family: 'Archivo Black', sans-serif;
         background-color:  #D12881 ;
     }
     .Workshop-image img{
-        margin-top: 100px;
-        margin-left: -120px;
         border-radius: 80%;
         width: 200px;
-        position: absolute;
-        display: none;
     }
     .full-box-work{
         background-color: #FDFBE8;
@@ -121,18 +119,22 @@ font-family: 'Archivo Black', sans-serif;
     
     } */
 }
-@media (min-width:768px) and (max-width:1024px){
+@media (min-width:600px) and (max-width:1024px){
     .workshop-side-btns {
-        position: absolute;
-        margin-top: -60px;
-        margin-left: 25%;
-        display: flex;
+       display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 2rem;
+        margin-top: 6%;
     }
-    .Workshop-image img{
-        display: none;
-    }
+    .main-Workshop-conatiner {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: center;
+    margin-top: 0%;
+}
   
 }
 

@@ -21,20 +21,20 @@ const Home = () => {
     
     <div className='home-page'>
     
-   
-   {/* <Navbar /> */}
-   {/* <Carousel />
+
+   <Navbar />
+   <Carousel />
    <Header />
-   <Join /> */}
-   {/* <Workshop /> */}
-   {/* <Team />
+   <Join />
+   <Workshop />
+   <Team />
    <Namecarousel/>
  
    <Gototop />
    <Joinourteam />
-     <Gallery /> */}
+     <Gallery />
    <Crochild />
-   {/* <Contact /> */}
+   <Contact />
    <Footer /> 
 
     </div>

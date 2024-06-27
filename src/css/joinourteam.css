@@ -4,6 +4,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     /* height: 100vh; */
     width: 100%
    
@@ -19,8 +20,8 @@
 }
 .main-join{
     width: 90%;
-    margin-left: 5%;
-    height: 140vh;
+    margin: auto;
+    height: 100vh;
 }
 @media screen and (max-width:600px){
     .main-join {
@@ -34,11 +35,17 @@
     width: 60%;
     margin: 20px auto;
 }
+
 }
 @media screen and (min-width:600px) and (max-width:1024px){
     .main-join {
     width: 90%;
     margin-left: 5%;
     height: 61vh;
+}
+.teamvideo-team {
+    border-radius: 20px;
+    width: 70%;
+    margin: 10px auto;
 }
 }
