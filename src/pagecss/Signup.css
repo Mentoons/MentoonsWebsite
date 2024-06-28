@@ -1,13 +1,16 @@
 .signup-main-container{
-    background-color: #F79F07;
-    width: 100%;
-    height: 150vh;
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  .signup-form{
+ background-color: #F79F07;
+    width: 50%;
+    min-height: 100vh;
+  }
   .fb-icon{
-    position: absolute;
+    
     color: #316FF6;
     font-size: 40px;
     margin-top: 3%;
@@ -17,24 +20,17 @@
     margin-left: 50%;
   }
   .pass-icons{
-    position: absolute;
+    
     color: black;
     margin-left:  34%;
     margin-top: -97px;
     font-size: 30px;
     z-index: 1;
   }
-  .gog-icon{
-    position: absolute;
-    margin-top: 2%;
-    font-size: 40px;
-    z-index: 1;
-    margin-top: 3%;
-    margin-left: 5%;
-  
-  }
+ 
+ 
   /* .signup-btn {
-    position: absolute;
+    
     margin-left: 5%;
     margin-top: 149%;
     background-color: white;
@@ -46,26 +42,21 @@
   .right-side-box{
     background-image: url('../Images/background.png');
     width: 50%;
-    height: 150vh;
+    min-height: 110vh;
     background-position: center;
     background-size: cover;
   }
   .group-image-signup{
-    position: absolute;
-    width: 50%;
-    margin-top:-4%;
-    margin-left: 1%;
-
+    width: 80%;
+    margin: auto;
   }
   
   .left-side-box-signup h4{
-    position: absolute;
-margin-top:-2%;
-margin-left:35%;
+ 
     color: aliceblue;
   }
   .left-side-box-signup h1{
-    position: absolute;
+    
     margin-top: -150px;
   text-align: center;
   font-size: 25px;
@@ -73,28 +64,28 @@ margin-left:35%;
   margin-left: 2%;
   }
   .left-side-box-signup span{
-    position: absolute;
+    
     margin-top: -5%;
     text-align: center;
     font-size: 18px;
     padding: 20px;
     margin-left: 15%;
   }
+ .signup-input-new input {
+    width: 100%;
   
-  .signup-input-new input{
-    width: 220%;
-    margin-left: 60%;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 40px;
     box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
-  }
+    margin: 10px 30%;
+}
   .signup-input-new span{
-    position: absolute;
+    
     margin-left: 35%;
   }
   .signup-btn{
-    position: absolute;
+    
     margin-left: 5%;
     background-color: white;
     width: 40%;
@@ -102,22 +93,12 @@ margin-left:35%;
     border-radius: 10px;
     box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
   }
-  .facebook-login-new{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 100%;
-    margin-left: 40%;
-   
-  }
   
   .gog-box-new h3{
-    z-index: 1;
-    margin-top: 15px;
-    margin-left: 30%;
+
   }
   .fb-box-new{
-    position: absolute;
+    
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -131,36 +112,31 @@ margin-left:35%;
     
   }
   .fb-box-new h3{
-    position: absolute;
+    
     margin-top: 15px;
     margin-left: 25%;
   }
+  .signup-btn-new{
+    margin: auto;
+  }
   .gog-box-new{
-    position: absolute;
+    
     background-color: white;
-    width: 20%;
+    max-width: 500px;
     height: 60px;
    display: flex;
-   margin-left: -3%;
-   margin-top: -4%;
-   margin-right: 20px;
+   align-items: center;
+   justify-content: space-around;
    border-radius: 10px;
    box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+   margin: auto;
   }
   .left-side-box-signup img{
-    position: absolute;
-    margin-top: -220px;
-    margin-left: 12%;
+  
     width: 300px;
   }
- 
-  .left-side-box-signup h2{
-    position: absolute;
-    margin-top: 290px;
-    margin-left: 18%;
-  }
   .left-side-box-signup p{
-    position: absolute;
+    
     color: white;
     font-size: 16px;
     text-align: center;
@@ -172,7 +148,7 @@ margin-left:35%;
     position: relative;
   }
   .left-side-box-signup p{
-    position: absolute;
+    
     color: white;
     font-size: 12px;
     text-align: center;
@@ -189,39 +165,35 @@ margin-left:35%;
   } 
   .group-image-signup {
     width: 90%;
-    margin-top: 80%;
-    margin-left: 6%;
+   
 }
 .logo-signup {
-  position: absolute;
+  /* 
   width: 398px;
-  margin-top: 30%;
+  margin-top: 30%; */
 }
   .right-side-box {
     background-image: url('../Images/background.png');
     width: 100%;
-    height: 180vh;
     background-position: center;
     background-size: cover;
-    margin-top: -320%;
-    
 }
 .left-side-box-signup{
   width: 100%;
   height: 50vh;
   background-position: center;
   background-size: cover;
-  margin-top: 150%;
+  /* margin-top: 150%; */
   
 }
 .left-side-box-signup img {
-  position: absolute;
+  
   margin-top: -20px;
   margin-left: 20%;
   width: 300px;
 }
 .signup-input-new{
-  position: absolute;
+  
   margin-top: 44%;
 }
 .signup-input-new input{
@@ -233,13 +205,13 @@ margin-left:35%;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .left-side-box-signup h2{
-  position: absolute;
+  
   margin-top: 800px;
   margin-left: 25%;
   color: white;
 }
 .signup-btn {
-  position: absolute;
+  
   margin-left: 5%;
   margin-top: 149%;
   background-color: white;
@@ -250,7 +222,7 @@ margin-left:35%;
 }
 /*  */
 .fb-box-new {
-  position: absolute;
+  
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -263,7 +235,7 @@ margin-left:35%;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .gog-box-new {
-  position: absolute;
+  
   background-color: white;
   width: 50%;
   height: 60px;
@@ -278,7 +250,7 @@ margin-left:35%;
   margin-left: 50%;
 }
 .pass-icons{
-  position: absolute;
+  
   color: black;
   margin-left:  154%;
   margin-top: -97px;
@@ -291,7 +263,7 @@ margin-left:35%;
   color:white;
 }
 .left-side-box-signup span {
-  position: absolute;
+  
   margin-top: -28%;
   text-align: center;
   font-size: 50px;
@@ -299,13 +271,13 @@ margin-left:35%;
   margin-left: 1%;
 }
 .logo-signup-new{
-  position: absolute;
+  
   width: 90%;
   margin-top:100%;
   margin-left: 6%;
 }
 .group-image-signup{
-  position: absolute;
+  
   width: 90%;
   margin-top:120%;
   margin-left: 6%;

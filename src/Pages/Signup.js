@@ -105,7 +105,7 @@ const Signup = () => {
   return (
     <div>
       <div className="signup-main-container">
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} className="signup-form">
           <div className="left-side-box-signup">
             <img src={menlogo} className="sign-up-logo" alt="" />
             <span className="signin-p">Join Mentoons to get Started</span>
@@ -172,6 +172,7 @@ const Signup = () => {
               />
               <br />
             </div>
+            <div className="signup-btn-new">
             <button type="submit" className="signup-btn">
               Submit
             </button>
@@ -179,10 +180,12 @@ const Signup = () => {
             <h2>
               Have an account? <Link to="/Signin">Sign in</Link>
             </h2>
+
+            </div>
             <div className="facebook-login-new">
               <div className="gog-box-new">
-                <h3>Sign in with Google</h3>
                 <FcGoogle className="gog-icon" />
+                <h3>Sign in with Google</h3>
               </div>
             </div>
           </div>

@@ -167,7 +167,7 @@
 }
 .team {
     position: relative;
-    height: 45vh;
+    height: auto;
     background-color: #FDFBE8;
 }
 .videobox {

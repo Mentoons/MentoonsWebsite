@@ -8,14 +8,12 @@
 }
 
 .fb-icon{
-  position: absolute;
   color: #316FF6;
   font-size: 40px;
   margin-top: 3%;
   margin-left: 5%;
 }
 .passc-icons{
-  position: absolute;
     color: black;
     margin-left:  34%;
     margin-top: -94px;
@@ -24,7 +22,6 @@
 }
 
 .signin-btn{
-  position: absolute;
   margin-left: 8%;
   margin-top: 5%;
   background-color: white;
@@ -34,7 +31,6 @@
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .gog-icon{
-  position: absolute;
   margin-top: 2%;
   font-size: 40px;
   z-index: 1;
@@ -57,7 +53,6 @@
  margin-left: 30%;
  }
 .passc-icons{
-  position: absolute;
     color: black;
     margin-left:  37%;
     margin-top: -57px;
@@ -74,12 +69,10 @@
 
  }
 .signup-input span{
-  position: absolute;
   margin-top: 50px;
   margin-left: 30%;
 }
 .signup-input-new span {
-  position: absolute;
   margin-top: -30%;
   margin-left: 75%;
 }
@@ -89,7 +82,6 @@
     margin-left: 19%;
 }
 .left-side-box h1{
-  position: absolute;
   margin-top: -150px;
 text-align: center;
 font-size: 25px;
@@ -97,7 +89,6 @@ padding: 10px;
 margin-left: 2%;
 }
 .left-side-box p{
-  position: absolute;
   margin-top: -120px;
   text-align: center;
   font-size: 15px;
@@ -113,11 +104,9 @@ margin-left: 2%;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .signup-input span{
-  position: absolute;
   margin-left: 35%;
 }
 .signup-btn{
-  position: absolute;
   margin-left: 5%;
   background-color: white;
   width: 40%;
@@ -142,7 +131,6 @@ margin-left: 2%;
   margin-left: 30%;
 }
 .fb-box{
-  position: absolute;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -159,7 +147,6 @@ margin-left: 2%;
   margin-left: 25%;
 }
 .gog-box{
-  position: absolute;
   background-color: white;
   width: 20%;
   height: 60px;
@@ -169,19 +156,18 @@ margin-left: 2%;
  box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .left-side-box h2{
-  position: absolute;
 
   margin-left: 18%;
 }
 @media screen and (max-width:600px) {
   .group-image-signin{
-    position: absolute;
+
     width: 90%;
     margin-top:-9%;
     margin-left: 3%;
   }
   .signin-input-new {
-    position: absolute;
+
     margin-top: 150px;
   }
   .logo-signin{
@@ -210,7 +196,6 @@ margin-left: 2%;
   margin-left: 30%;
   }
 .left-side-box{
-  position: absolute;
   margin-top: 139%;
   background-color: #F79F07;
   width: 66vh;
@@ -227,7 +212,6 @@ margin-left: 2%;
 }
 
 .fb-box {
-  position: absolute;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -239,12 +223,10 @@ margin-left: 2%;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .signup-input-new span {
-  position: absolute;
   margin-top: -30%;
   margin-left: 75%;
 }
 .signin-btn{
-  position: absolute;
   margin-left: 10%;
   margin-top: 85%;
   background-color: white;
@@ -254,12 +236,10 @@ margin-left: 2%;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .left-side-box h2 {
-  position: absolute;
   margin-top: 375px;
   margin-left: 20%;
 }
 .gog-box {
-  position: absolute;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -271,7 +251,6 @@ margin-left: 2%;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .passc-icons{
-  position: absolute;
     color: black;
     margin-left:  182%;
     margin-top: -54px;

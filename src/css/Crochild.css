@@ -5,8 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: auto;
-   
+    min-height: 150vh;
     padding: 28px;
 }
 .revive-form-main{
@@ -75,7 +74,7 @@
         padding: 0 1em;
     }  
     .revive-container {
-        height: auto;
+        height: 120vh;
     }
     
 }

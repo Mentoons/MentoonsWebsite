@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* height: 100vh; */
+    min-height: 180vh;
     width: 100%
    
 }
@@ -41,7 +41,7 @@
     .main-join {
     width: 90%;
     margin-left: 5%;
-    height: 61vh;
+    min-height: auto;
 }
 .teamvideo-team {
     border-radius: 20px;

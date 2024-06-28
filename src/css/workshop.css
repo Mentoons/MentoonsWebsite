@@ -73,7 +73,7 @@ font-family: 'Archivo Black', sans-serif;
     }
     .workshop{
         margin-top: 0%;
-        height: 60vh;
+        height: 100vh;
     }
     .main-Workshop-conatiner{
         margin-top: 0%;
@@ -85,7 +85,7 @@ font-family: 'Archivo Black', sans-serif;
     .workshop-box {
         background-color: #FDFBE8;
         width: 56%;
-        height: 36%;
+        height: 50%;
         border-radius: 20px;
         /* margin-top: 0px; */
         margin-left: 20%;
@@ -128,13 +128,15 @@ font-family: 'Archivo Black', sans-serif;
         gap: 2rem;
         margin-top: 6%;
     }
-    .main-Workshop-conatiner {
-    display: flex;
-    flex-direction: column;
-    gap: 0rem;
-    align-items: center;
-    margin-top: 0%;
-}
+     .main-Workshop-conatiner {
+        margin-top: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
   
 }
 
