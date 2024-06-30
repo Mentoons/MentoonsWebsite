@@ -74,7 +74,7 @@
         padding: 0 1em;
     }  
     .revive-container {
-        height: 120vh;
+        min-height: 180vh;
     }
     
 }

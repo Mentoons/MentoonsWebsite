@@ -16,9 +16,6 @@
     margin-top: 3%;
     margin-left: 5%;
   }
-  .pass{
-    margin-left: 50%;
-  }
   .pass-icons{
     
     color: black;
@@ -72,21 +69,19 @@
     margin-left: 15%;
   }
  .signup-input-new input {
-    width: 100%;
-  
+    width: 57%;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 40px;
     box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
-    margin: 10px 30%;
+    margin: 10px 21%;
 }
   .signup-input-new span{
     
     margin-left: 35%;
   }
   .signup-btn{
-    
-    margin-left: 5%;
+    margin:2rem;
     background-color: white;
     width: 40%;
     padding: 10px;
@@ -117,19 +112,22 @@
     margin-left: 25%;
   }
   .signup-btn-new{
-    margin: auto;
-  }
+margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem  }
   .gog-box-new{
-    
     background-color: white;
-    max-width: 500px;
+    max-width: 255px;
     height: 60px;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   border-radius: 10px;
-   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
-   margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
+    margin: auto;
   }
   .left-side-box-signup img{
   
@@ -144,6 +142,9 @@
     margin-left: 80px;
   }
 @media screen and (max-width:600px) {
+   .signup-form{
+    width: 100%;
+  }
   .left-side-box-signup{
     position: relative;
   }
@@ -168,9 +169,7 @@
    
 }
 .logo-signup {
-  /* 
-  width: 398px;
-  margin-top: 30%; */
+
 }
   .right-side-box {
     background-image: url('../Images/background.png');
@@ -183,7 +182,6 @@
   height: 50vh;
   background-position: center;
   background-size: cover;
-  /* margin-top: 150%; */
   
 }
 .left-side-box-signup img {
@@ -193,27 +191,20 @@
   width: 300px;
 }
 .signup-input-new{
-  
-  margin-top: 44%;
+
 }
 .signup-input-new input{
-  width: 150%;
-  margin-left: 30%;
+  width: 65%;
   padding: 10px;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .left-side-box-signup h2{
-  
-  margin-top: 800px;
-  margin-left: 25%;
   color: white;
 }
 .signup-btn {
-  
   margin-left: 5%;
-  margin-top: 149%;
   background-color: white;
   width: 80%;
   padding: 10px;
@@ -228,24 +219,21 @@
   justify-content: space-between;
   width: 45%;
   height: 60px;
-  margin-left: 14%;
-  margin-top: 360%;
+
   margin-right: 30px;
   border-radius: 10px;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
 .gog-box-new {
-  
+  margin: 25px auto;
   background-color: white;
-  width: 50%;
+  width: 100%;
   height: 60px;
   display: flex;
-  margin-left: -39%;
-  margin-top: 360%;
-  margin-right: 20px;
   border-radius: 10px;
   box-shadow: 6px 6px 0px rgba(103, 102, 102, 0.2);
 }
+
 .pass{
   margin-left: 50%;
 }
@@ -258,15 +246,13 @@
   z-index: 1;
 }
 .left-side-box-signup h4 {
-  margin-top: 125%;
-  margin-left: 45%;
   color:white;
 }
 .left-side-box-signup span {
   
-  margin-top: -28%;
+  margin-top: 0%;
   text-align: center;
-  font-size: 50px;
+  font-size: 16px;
   padding: 20px;
   margin-left: 1%;
 }
@@ -283,5 +269,16 @@
   margin-left: 6%;
 
 }
+.right-side-box{
+  display: none;
+}
 
+}
+@media (min-width:600px) and (max-width:1024px){
+  .right-side-box{
+    display: none;
+  }
+  .signup-form {
+    width: 100%;
+}
 }

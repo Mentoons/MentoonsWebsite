@@ -61,51 +61,46 @@ const Signin = () => {
   return (
     <div>
       <div className="signin-main-container-new">
-        <form onSubmit={formik.handleSubmit}>
-          <div className="left-side-box">
-            <h1>Welcome Back</h1>
-            <p className="signin-p">Sign in to continue</p>
+        <form onSubmit={formik.handleSubmit} className="left-side-box">
+          <h1>Welcome Back</h1>
+          <p className="signin-p">Sign in to continue</p>
 
-            <div className="signin-input-new">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formik.values.email}
-                onChange={formik.handleChange}
-                placeholder="Email ID"
-              />
-              <br></br>
-              <input
-                className="pass"
-                type="password"
-                id="password"
-                name="password"
-                value={formik.values.password}
-                onChange={formik.handleChange}
-                placeholder="Password"
-              />
+          <div className="signin-input-new">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              placeholder="Email ID"
+            />
+            <br></br>
+            <input
+              className="pass"
+              type="password"
+              id="password"
+              name="password"
+              value={formik.values.password}
+              onChange={formik.handleChange}
+              placeholder="Password"
+            />
 
-              <span className="forget-login">Forgot Password?</span>
-            </div>
-
+            <span className="forget-login">Forgot Password?</span>
             <button type="submit" className="signin-btn">
               Submit
             </button>
-
             <h2>
               Not a Member?{" "}
               <Link to="/Signup">
                 <a href="">Click here</a>{" "}
               </Link>
             </h2>
+          </div>
 
-            <div className="facebook-login">
-              <div className="gog-box">
-                <FcGoogle className="gog-icon" />
-                <h3>Sign in with google</h3>
-              </div>
-            </div>
+          <div className="facebook-login"></div>
+          <div className="gog-box">
+            <FcGoogle className="gog-icon" />
+            <h3>Sign in with google</h3>
           </div>
         </form>
 

@@ -84,7 +84,7 @@ const Workshop = () => {
       <div className="workshop-box">
         <div className="work-image">
           <div className="main-empower-container">
-            <div className="full-box-work">
+            {/* <div className="full-box-work"> */}
               <div className="workshop-con-box">
                 {data.map(
                   ({
@@ -183,7 +183,7 @@ const Workshop = () => {
                   }
                 )}
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
         <div className="work-text"></div>

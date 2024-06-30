@@ -6,7 +6,7 @@
     background-attachment: fixed;
     width: 100%;
 }
-.workshop-box {
+/* .workshop-box {
    background-color: #FDFBE8;
     width: 80%;
     height: auto;
@@ -14,12 +14,14 @@
     padding: 40px 1em;
     border-radius: 30px;
     margin-bottom: 50px;
-}
+} */
 .main-Workshop-conatiner{
     display: flex;
     gap: 7rem;
     align-items: center;
-    margin-top: 3%;
+    margin: 57px auto;
+    background-color: #FDFBE8;
+    border-radius: 20px;
 }
 .Workshop-image{
     background-image: url('../Images/kidsbg.png');
@@ -80,16 +82,16 @@ font-family: 'Archivo Black', sans-serif;
         display: flex;
         flex-direction: column;
         gap: 0rem;
+        /* margin-left: -40%; */
        
     }
-    .workshop-box {
+    /* .workshop-box {
         background-color: #FDFBE8;
         width: 56%;
         height: 50%;
         border-radius: 20px;
-        /* margin-top: 0px; */
         margin-left: 20%;
-    }
+    } */
     
     .workshop-side-btns button{
        

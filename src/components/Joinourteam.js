@@ -65,7 +65,7 @@ const Joinourteam = () => {
                     <img src={d.img} className="my-5 h-44 w-44 rounded-sm" />
                   </div>
 
-                  <div className="flex flex-col justify-center items-center gap-3 p-12">
+                  <div className="flex flex-col justify-center items-center gap-1 p-9">
                     <p className="text-4xl font-semibold">{d.name}</p>
                     <p className="text-xs">{d.position}</p>
                     <Link to="/Jobapply">
