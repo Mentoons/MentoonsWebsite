@@ -26,13 +26,13 @@ function App() {
   const [cartitems,setCartitems] = useState([]);
 
 
-  const addtoCart = (product) =>{
-    const existingitems = JSON.parse(localStorage.getItem("cartitems"))??[]
-    existingitems.push(product)
-    localStorage.setItem("cartitems",JSON.stringify(existingitems))
-    setCartitems(existingitems)
-    console.log({product,existingitems},);
-  }
+  // const addtoCart = (product) =>{
+  //   const existingitems = JSON.parse(localStorage.getItem("cartitems"))??[]
+  //   existingitems.push(product)
+  //   localStorage.setItem("cartitems",JSON.stringify(existingitems))
+  //   setCartitems(existingitems)
+  //   console.log({product,existingitems},);
+  // }
 
   const deleteItem = (id) =>{
     const existingitems = JSON.parse(localStorage.getItem("cartitems"))??[]
@@ -83,7 +83,7 @@ useEffect(()=>{
             <Route path='/Logbtn' element={<Logbtn />} />
             <Route path='/Cart' element={<Cart product={cartitems} deleteItem={deleteItem} />} />
             <Route path='/Additems' element={<Additems />} />
-            <Route path='/Productdetails/:id' element={<Productdetails  cartitems={cartitems} addtoCart={addtoCart}/>} />
+            <Route path='/Productdetails/:id' element={<Productdetails  cartitems={cartitems}/>} />
             <Route  path='/Payment'  element={<Payment />} />
             <Route  path='/Accedit'  element={<Accedit />} />
             <Route  path='/Buybtn'  element={<Buybtn />} />

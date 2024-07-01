@@ -95,12 +95,12 @@ const Signin = () => {
                 <a href="">Click here</a>{" "}
               </Link>
             </h2>
-          </div>
 
-          <div className="facebook-login"></div>
-          <div className="gog-box">
-            <FcGoogle className="gog-icon" />
-            <h3>Sign in with google</h3>
+            <div className="facebook-login"></div>
+            <div className="gog-box">
+              <FcGoogle className="gog-icon" />
+              <h3>Sign in with google</h3>
+            </div>
           </div>
         </form>
 

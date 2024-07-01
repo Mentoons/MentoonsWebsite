@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState } from "react";
 import "../pagecss/Signup.css";
 import menlogo from "../Images/menlogo.png";
 import group from "../Images/group.png";
@@ -10,8 +10,9 @@ import Pdf from "../data/CUSTOMER_SUPPORT.pdf";
 import axios from "../api/Baseurl.js";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import Electronicgadgets from "../Images/Electronicgadgets.jpg"
 const Signup = () => {
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
   const formik = useFormik({
@@ -24,6 +25,7 @@ const Signup = () => {
       confirmpassword: "",
     },
     onSubmit: async (values) => {
+      console.log(values,"lllllllllllllllllll");
       try {
         const formData = new FormData();
         const pass = values.password;
@@ -37,7 +39,7 @@ const Signup = () => {
           formData.append("password", values.password);
 
           const response = await axios.post("/signup", formData);
-
+          console.log("got valuesssssssssssssssssss")
           if (response.data.UserData) {
             console.log(response.data.UserData,"got responseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
             const link = document.createElement("a");
@@ -46,6 +48,7 @@ const Signup = () => {
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
+           
 
             toast.success("🤩🎉 Congratulations! You got a free comic! 🎉", {
               position: "top-right",
@@ -59,7 +62,7 @@ const Signup = () => {
               transition: Bounce,
             });
 
-            navigate("/Signin");
+            // navigate("/Signin");
             
             toast.success("😍 Registration successfull !", {
               position: "top-right",
@@ -72,6 +75,8 @@ const Signup = () => {
               theme: "colored",
               transition: Bounce,
             });
+                       setOpen(true);
+
           }
         } else {
           toast.error("Passwords do not match!", {
@@ -103,7 +108,23 @@ const Signup = () => {
   });
 
   return (
-    <div>
+    <div className="signup-main">
+      {open && (
+        <div className="overlay">
+          <div className="signup-success-popup">
+            {/* Your content for the popup after signup success */}
+            <h1>Congratulations you got a amazing free comic</h1>
+            <img src={Electronicgadgets} alt="" />
+            <div>
+              <h2>Congratulations! Signup Successful</h2>
+              <p>Thank you for signing up!</p>
+              <p>You got a free comic!</p>
+              <p>Redirecting to signin page...</p>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="signup-main-container">
         <form onSubmit={formik.handleSubmit} className="signup-form">
           <div className="left-side-box-signup">
@@ -173,14 +194,13 @@ const Signup = () => {
               <br />
             </div>
             <div className="signup-btn-new">
-            <button type="submit" className="signup-btn">
-              Submit
-            </button>
-            <h4 className="forget">Forgot Password?</h4>
-            <h2>
-              Have an account? <Link to="/Signin">Sign in</Link>
-            </h2>
-
+              <button type="submit" className="signup-btn">
+                Submit
+              </button>
+              <h4 className="forget">Forgot Password?</h4>
+              <h2>
+                Have an account? <Link to="/Signin">Sign in</Link>
+              </h2>
             </div>
             <div className="facebook-login-new">
               <div className="gog-box-new">

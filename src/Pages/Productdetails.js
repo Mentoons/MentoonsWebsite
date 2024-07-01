@@ -12,13 +12,7 @@ import { object } from 'yup'
 import Cart from './Cart.js'
 
 
-const Productdetails = ({cartitems,addtoCart}) => {
-  
-
-  // const dispatch = useDispatch();
-  // const addProduct =(product) =>{
-  //   dispatch(addCart(product));
-  // }
+const Productdetails = ({cartitems}) => {
   
   const [product,setProduct] = useState([]);
 
@@ -30,7 +24,6 @@ const Productdetails = ({cartitems,addtoCart}) => {
   console.log(id,"999999999999999999999999999999");
   useEffect(()=>{
     const fetchProduct= async (id) =>{
-
        try {
           const response = await axios.get(`/prodView/${id}`)
           console.log(response,"....----.......>");
@@ -48,31 +41,38 @@ const Productdetails = ({cartitems,addtoCart}) => {
 
   !Object.keys(product).length > 0 && <div>ppp</div>
   const ShowProduct = () =>{
-    return(
+    return (
       <>
-    
- <div className="product-main-box" >
-      <div className='detile-image'key={{id}}>
-          <img src={product.thumbnail} alt="" />
-      
-      </div>
-      <div className="product-detile">
-      <h2>{product?.productName}</h2>
-      <br></br>
-      <h3>{product.ageCategory}   Years Old</h3>
-      <p></p>
-      <p className='pd'><MdCurrencyRupee className='rs-icon'/>{product.price}</p>
-      <p>{product.productDescription}</p>
- <button className='buy-btn'>Buy Right Away!</button>
-<button className='Add-btn' onClick={()=>addtoCart(product)}>Add To Cart</button>
-      </div>  
-      </div>
-
-      
+        <div className="product-main-box">
+          <div className="detile-image" key={{ id }}>
+            <img src={product.thumbnail} alt="" />
+          </div>
+          <div className="product-detile">
+            <h2>{product?.productName}</h2>
+            <br></br>
+            <h3>{product.ageCategory} Years Old</h3>
+            <p></p>
+            <p className="pd">
+              <MdCurrencyRupee className="rs-icon" />
+              {product.price}
+            </p>
+            <p>{product.productDescription}</p>
+            <button className="buy-btn">Buy Right Away!</button>
+            <button className="Add-btn"  onClick={() => addToCart(product)}>
+              Add To Cart
+            </button>
+          </div>
+        </div>
       </>
-    )
+    );
   }
 console.log(cartitems,"dataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
+    const addToCart = async (product) => {
+      console.log(product, "pppppppppp7777777777777777777777777777777ppppppppppppppp");
+      const res = await axios.post("/addToCart", {product});
+      console.log(res, "dataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    };
   return (
     <div>
         <Productnav  cartitems={cartitems} />

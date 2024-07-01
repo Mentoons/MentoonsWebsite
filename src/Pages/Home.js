@@ -12,7 +12,7 @@ import Contact from '../components/Contact.js'
 import Footer from '../components/Footer.js'
 import Crochild from '../components/Crochild.js'
 import Gototop from '../components/Gototop.js'
-
+import CookieConsent from '../components/CookieConsent.js'
 
 const Home = () => {
 

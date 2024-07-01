@@ -9,6 +9,7 @@ import caro2 from "../Images/caro2.jpg";
 import caro3 from "../Images/caro3.jpg";
 import caro4 from "../Images/caro4.jpg";
 import bee from "../Images/bee.png";
+import CookieConsent from "./CookieConsent";
 
 const Carousel = () => {
  const settings = {
@@ -95,6 +96,7 @@ const Carousel = () => {
           </div>
         </div>
       </Slider>
+      <CookieConsent />
     </div>
   );
 };
