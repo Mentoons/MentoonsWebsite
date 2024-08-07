@@ -10,9 +10,13 @@ import Pdf from "../data/CUSTOMER_SUPPORT.pdf";
 import axios from "../api/Baseurl.js";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Electronicgadgets from "../Images/Electronicgadgets.jpg"
+import Electronicgadgets from "../Images/Electronicgadgets.jpg";
+import { MdClose } from "react-icons/md";
+import Lottie from "lottie-react";
+import Papper from "../Lottie/Papper.json"
 const Signup = () => {
   const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
   const navigate = useNavigate();
 
   const formik = useFormik({
@@ -39,15 +43,15 @@ const Signup = () => {
           formData.append("password", values.password);
 
           const response = await axios.post("/signup", formData);
-          console.log("got valuesssssssssssssssssss")
-          if (response.data.UserData) {
+          console.log(response,"got valuesssssssssssssssssss")
+          if (response?.data) {
             console.log(response.data.UserData,"got responseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
-            const link = document.createElement("a");
-            link.href = Pdf; // Set PDF URL
-            link.setAttribute("download", "do you know.pdf");
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            // const link = document.createElement("a");
+            // link.href = Pdf; // Set PDF URL
+            // link.setAttribute("download", "do you know.pdf");
+            // document.body.appendChild(link);
+            // link.click();
+            // document.body.removeChild(link);
            
 
             toast.success("🤩🎉 Congratulations! You got a free comic! 🎉", {
@@ -78,21 +82,23 @@ const Signup = () => {
                        setOpen(true);
 
           }
-        } else {
-          toast.error("Passwords do not match!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-            transition: Bounce,
-          });
         }
+        //  else {
+        //   toast.error("Passwords do not match!", {
+        //     position: "top-right",
+        //     autoClose: 5000,
+        //     hideProgressBar: false,
+        //     closeOnClick: true,
+        //     pauseOnHover: true,
+        //     draggable: true,
+        //     progress: undefined,
+        //     theme: "colored",
+        //     transition: Bounce,
+        //   });
+        // }
       } catch (err) {
-        toast.error("An error occurred during signup!", {
+        console.log(err,'pppp')
+        toast.error(err.message, {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -112,14 +118,24 @@ const Signup = () => {
       {open && (
         <div className="overlay">
           <div className="signup-success-popup">
+            <MdClose
+              className="close-btn-signup"
+              onClick={() => navigate("/Signin")}
+            />
+
             {/* Your content for the popup after signup success */}
             <h1>Congratulations you got a amazing free comic</h1>
+            <h2> Signup Successfully </h2>
             <img src={Electronicgadgets} alt="" />
+            <Lottie
+              animationData={Papper}
+              loop={true}
+              style={{ position: "absolute", zIndex: -1 }}
+            />
             <div>
-              <h2>Congratulations! Signup Successful</h2>
-              <p>Thank you for signing up!</p>
-              <p>You got a free comic!</p>
-              <p>Redirecting to signin page...</p>
+              {/* <p>Thank you for signing up!</p> */}
+              {/* <p>You got a free comic!</p> */}
+              <button class="btn" onClick={() => navigate("/Signin")}> Click Here to Login</button>{" "}
             </div>
           </div>
         </div>
@@ -128,7 +144,7 @@ const Signup = () => {
       <div className="signup-main-container">
         <form onSubmit={formik.handleSubmit} className="signup-form">
           <div className="left-side-box-signup">
-            <img src={menlogo} className="sign-up-logo" alt="" />
+            <img src={menlogo} className="sign-up-logo" alt="" onClick={()=>navigate('/')}/>
             <span className="signin-p">Join Mentoons to get Started</span>
             <div className="signup-input-new">
               <input
