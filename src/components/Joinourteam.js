@@ -7,83 +7,84 @@ import { BsPersonArmsUp } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 const Joinourteam = () => {
- const settings = {
-   dots: true,
-   infinite: true,
-   speed: 500,
-   slidesToShow: 3,
-   slidesToScroll: 3,
-   responsive: [
-     {
-       breakpoint: 1024, // Large devices (laptops, desktops)
-       settings: {
-         slidesToShow: 2,
-         slidesToScroll: 2,
-       },
-     },
-     {
-       breakpoint: 768, // Medium devices (tablets)
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1,
-       },
-     },
-     {
-       breakpoint: 480, // Small devices (phones)
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1,
-       },
-     },
-     // You can add more breakpoints as needed
-   ],
- };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // Large devices (laptops, desktops)
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768, // Medium devices (tablets)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // Small devices (phones)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      // You can add more breakpoints as needed
+    ],
+  };
 
   return (
-    <div className="join-container">
+    <div className="join-container py-14">
       <div className="main-join">
-      {/* <img src={bronwave} className="brounwave" /> */}
-      <div
-        className="apply-bord"
-        data-aos="zoom-in-down"
-        data-aos-duration="1000"
-      >
-         <div className="join-heading">
-
-<BsPersonArmsUp className='per-icons'/>
-<BsPersonArmsUp className='per-iconsa'/>
-<h1>JOIN MENTOONS</h1>
-  </div>
-      </div>
-      <div className="join-container">
-        <div className="w-3/4 m-auto">
-          <div className="mt-20">
-            <Slider {...settings}>
-              {data.map((d) => (
-                <div className="bg-white h-[790px] w-[94] text-black rounded-xl">
-                  <div className=" h-56  rounded-t-xl bg-purple-500 flex justify-center item-center">
-                    <img src={d.img} className="my-5 h-44 w-44 rounded-sm" />
-                  </div>
-
-                  <div className="flex flex-col justify-center items-center gap-1 p-9">
-                    <p className="text-4xl font-semibold">{d.name}</p>
-                    <p className="text-xs">{d.position}</p>
-                    <Link to="/Jobapply">
-                      <button className="btn-color">
-                        <span> Apply Now</span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </Slider>
+        {/* <img src={bronwave} className="brounwave" /> */}
+        <div
+          className="apply-bord"
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
+        >
+          <div className="join-heading">
+            <BsPersonArmsUp className="per-icons" />
+            <BsPersonArmsUp className="per-iconsa" />
+            <h1>JOIN MENTOONS</h1>
           </div>
         </div>
+        <div className="w-full join-container">
+          <div className="w-full m-auto px-8">
+            <div className="mt-20">
+              <Slider {...settings}>
+                {data.map((d) => (
+                  <div className="bg-white shadow h-fit text-black rounded-xl">
+                    <div className=" h-56 rounded-t-xl bg-[#00AEEF] flex justify-center item-center">
+                      <img
+                        src={d.img}
+                        className="px-4 py-4 h-full w-full rounded-3xl"
+                      />
+                    </div>
+
+                    <div className="flex flex-col justify-center items-center gap-1 p-9 space-y-2">
+                      <p className="text-2xl font-semibold">{d.name}</p>
+                      <p className="text-sm text-gray-500">{d.position}</p>
+                      <Link to="/Jobapply">
+                        <button className="btn-color bg-red-500 text-white rounded-md px-4 py-2 border-2 border-red-500 hover:bg-white hover:text-red-500 transition-all ease-in-out duration-300">
+                          <span> Apply Now</span>
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </div>
+        </div>
+        {/* <img src={lightwave} className="lightwave" alt="" /> */}
       </div>
-      {/* <img src={lightwave} className="lightwave" alt="" /> */}
     </div>
-    </div>
-    
   );
 };
 

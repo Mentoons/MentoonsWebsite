@@ -12,50 +12,38 @@ import bee from "../Images/bee.png";
 import CookieConsent from "./CookieConsent";
 
 const Carousel = () => {
- const settings = {
-   dots: true,
-   infinite: true,
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   autoplay: true,
-   speed: 2000,
-   autoplaySpeed: 2000,
-   fade: true,
- };
- const headingRef = useRef(null);
- const paragraphRef = useRef(null);
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    fade: true,
+  };
+  const headingRef = useRef(null);
+  const paragraphRef = useRef(null);
 
- useEffect(() => {
-   const tl = gsap.timeline();
+  useEffect(() => {
+    const tl = gsap.timeline();
 
-   tl.fromTo(
-     headingRef.current,
-     { scale: 0.5, opacity: 0 },
-     { scale: 1, opacity: 1, duration: 1, ease: "power3.out" }
-   ).fromTo(
-     paragraphRef.current,
-     { scale: 0.5, opacity: 0 },
-     { scale: 1, opacity: 1, duration: 1, ease: "power3.out" },
-     "-=0.5" // overlap the animations
-   );
- }, []);
+    tl.fromTo(
+      headingRef.current,
+      { scale: 0.5, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 1, ease: "power3.out" }
+    ).fromTo(
+      paragraphRef.current,
+      { scale: 0.5, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 1, ease: "power3.out" },
+      "-=0.5" // overlap the animations
+    );
+  }, []);
 
   return (
     <div>
       <h2>Auto Play</h2>
       <Slider {...settings}>
-        <div>
-          <div className="caro-container">
-            <img src={caro1} alt="" />
-            <div className="main-para" data-aos="zoom-in">
-              <h3 ref={headingRef}>WELCOME TO MENTOONS</h3>
-              <p ref={paragraphRef}>
-                A unique platform that combines Mentoring with <br></br> the
-                powerful language of Cartoons.
-              </p>
-            </div>
-          </div>
-        </div>
         <div>
           <div className="caro-container" data-aos="zoom-in">
             <img src={caro2} alt="" />
